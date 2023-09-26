@@ -10,9 +10,18 @@ const initialState = {
     modal_open: false,
 }
 
+function handleOpenWhatsAppChat() {
+       
+    const phoneNumber = '9773926687';
+    const message = `Hello there! 🤝 How can we help`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, '_blank');
+  }
+  
+
 const AdelContextWrapper = (props) => {
     const [state, dispatch] = useReducer(reducer, initialState);
-    return <AdelContext.Provider value={{ state, dispatch }}>
+    return <AdelContext.Provider value={{ state, dispatch,handleOpenWhatsAppChat }}>
         {props.children}
     </AdelContext.Provider>
 }

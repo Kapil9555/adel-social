@@ -43,28 +43,26 @@ import SideDrawer from "./components/SideDrawer";
 import BulkMailer from "./pages/ServicesSideBar/Services/BulkMailer";
 import AndroidNewPage from "./pages/Mobile/AndroidNewPage";
 import { Box } from "@mui/material";
+import  WhatsApp from './assets/what.png'
+import { useContext } from "react";
+import { AdelContext } from "./store/Context";
+import './index.css'
 
 function App() {
   const { state } = useBottomBar()
+  const {handleOpenWhatsAppChat}=useContext(AdelContext)
+ const handleOpenWhat =()=>{
+  handleOpenWhatsAppChat()
+ }
   return (
     <>
       <div className='upArrow' style={{ left: '0px', bottom: '40px', display: 'block', position: 'fixed', cursor: 'pointer', zIndex: state.drawer_opened ? -1 : 9999 }}>
         <img onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth", }) }} src={upArrow} alt="pic" style={{ width: '100px', height: '100px', borderRadius: '100%' }} />
       </div >
-      <Box sx={{right: '0px', bottom: '40px', display: 'block', position: 'fixed', cursor: 'pointer', zIndex: state.drawer_opened ? -1 : 9999 }}>
-      <FloatingWhatsApp
-        accountName="AdelSocial"
-        buttonClassName="whatsappButton"
-        avatar={logoOnly}
-        phoneNumber={`${MOBILE}`}
-        statusMessage="Typically replies within 1 hour"
-        chatMessage={`Hello there! 🤝 How can we help?`}
-        darkMode={false}
-        allowEsc
-        allowClickAway
-        notification
-        notificationSound
-      />
+      <Box sx={{right: '20px', bottom:{xs:'85px',sm:"80px",md:"73px",lg:"75px"}, display: 'block', position: 'fixed', cursor: 'pointer', zIndex: state.drawer_opened ? -1 : 9999 }}>
+       <Box className="button" sx={{height:{xs:"50px",sm:"55",md:"60px",lg:"60px"},width:{xs:"50px",sm:"55",md:"60px",lg:"60px"}}} onClick={handleOpenWhat}>
+         <img src={WhatsApp} height={"100%"} width={"100%"}/>
+       </Box>
       </Box>
      
 

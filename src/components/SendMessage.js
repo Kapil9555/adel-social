@@ -1,15 +1,15 @@
 import { Grid, Typography, Button, Container } from '@mui/material'
-import React from 'react'
+import React, { useContext } from 'react'
 import { MOBILE, SECONDARY_COLOR } from '../constant'
 import '../pages/Homepage.css'
+import { AdelContext } from '../store/Context'
 
 const  SendMessage = () => {
-    function handleOpenWhatsAppChat() {
+    const {handleOpenWhatsAppChat}=useContext(AdelContext)
+    
+    function handleOpenWhatsApp() {
        
-        const phoneNumber = '9773926687';
-        const message = 'Hello';
-        const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`
-        window.open(whatsappUrl, '_blank');
+        handleOpenWhatsAppChat()
       }
       
 
@@ -26,7 +26,7 @@ const  SendMessage = () => {
                     </a>
                 </Grid>
                 <Grid item lg={5} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <Button variant='contained' sx={{ mt: { xs: '10px', lg: 0 }, padding: { lg: '20px 40px', xs: '10px 20px' }, borderRadius: '10px' }} data-aos="fade-left" onClick={handleOpenWhatsAppChat}>Send us a Message</Button>
+                    <Button variant='contained' sx={{ mt: { xs: '10px', lg: 0 }, padding: { lg: '20px 40px', xs: '10px 20px' }, borderRadius: '10px' }} data-aos="fade-left" onClick={handleOpenWhatsApp}>Send us a Message</Button>
                 </Grid>
             </Container>
         </Grid >

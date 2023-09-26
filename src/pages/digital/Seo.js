@@ -139,8 +139,8 @@ const Seo = () => {
                     </Box>
                 </Grid>
 
-                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px", mt: "-45px" }}>
-                    <Grid container xs={8} sx={{ bgcolor: "white", boxShadow: " 0px -2px 38px -7px rgba(0,0,0,0.44)", p: "3px", borderRadius: "15px" }}>
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px",  mt: {lg:"-45px", md:'0', sm:'', xs:''} }}>
+                    <Grid container xs={8} sx={{ bgcolor: "white", boxShadow: " 0px -2px 38px -7px rgba(0,0,0,0.44)", p: "7px 3px", borderRadius: "15px" }}>
                         <Grid item xs={12} md={6} lg={3} sx={{ borderRight: {lg:"1px solid #efefef", md:'1px solid #efefef', sm:'', xs:''}}} spacing={2}>
 
                             <Typography align='center' sx={{ fontSize: {lg:"40px", md:'35px', sm:'30px', xs:'25px'}, fontWeight: "800", color: MAIN_COLOR }} >

@@ -545,7 +545,7 @@ const Java = () => {
 
 
                         <Grid item xs={12} sm={12} md={6} lg={4}>
-                            <Card sx={{ maxWidth: 400, p: "15px", m: "15px" }} elevation={5}  >
+                            <Card sx={{ maxWidth: 400, p: "15px", m: "15px", boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)' }} elevation={5}  >
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"

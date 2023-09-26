@@ -1,5 +1,5 @@
 import { Box, Button, Container, Grid, OutlinedInput, Paper, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import digitalmarketing from '../.././assets/digitalmarketingg.jpg'
 import clutch from '../../assets/clutch.png'
 import googleFirm from '../../assets/google-firms.png'
@@ -14,18 +14,23 @@ import Header from '../../components/Header'
 import SendMessage from '../../components/SendMessage'
 import { MAIN_COLOR } from '../../constant'
 import useBottomBar from '../../utils/useBottomBar'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 const DigitalMarketing = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 })
+    }, [])
     const { state } = useBottomBar()
     let six = [{
         title: "Social media marketing",
         des: "Having a social media presence as a business trying to make it in the digital world will help you grow your customer base. With over three billion active users across most social media platforms, your company must use social media to grow"
     }, {
         title: "Web development services",
-        des: "Finding a web development company that understands your goals and can deliver the best results possible within your budget can be difficult at times.Though you can choose a trustworthy company, consider offering you everything in a balanced and organized manner."
+        des: "Finding a web development company that understands your goals and can deliver the best results possible within your budget can be difficult at times.Though you can choose a..."
     },
     {
         title: "Our web design services",
@@ -34,15 +39,15 @@ const DigitalMarketing = () => {
         ,
     {
         title: "E-commerce website",
-        des: "E-commerce website development allows you to buy or sell products online, essentially making trade easier. Consumers can use e-commerce websites to research, analyze, search, and browse. Increase your purchasing options."
+        des: "E-commerce website development allows you to buy or sell products online, essentially making trade easier. Consumers can use e-commerce websites to research, analyze, search, and browse. Increase your purchasing options.."
     },
     {
         title: "WordPress Creation ",
-        des: "Though WordPress is the most popular content management system on the internet today. Every company wants to keep its website active. It all comes down to designing and implementing websites with the WordPress creation tool. We will be involved in both front-end and back-end development."
+        des: "Though WordPress is the most popular content management system on the internet today. Every company wants to keep its website active. It all comes down to designing and implementing websites with the WordPress creation tool... "
     },
     {
         title: "Drupal creation",
-        des: "We are experts in Drupal website development, theme development, support and other types of maintenance services, custom Drupal applications, and Drupal migration services. Our team of highly experienced Drupal developers is ready to provide the best services to our clients"
+        des: "We are experts in Drupal website development, theme development, support and other types of maintenance services, custom Drupal applications, and Drupal migration services. Our team of highly experienced Drupal developers is ready to provide the best services..."
     }
 
     ]
@@ -52,7 +57,7 @@ const DigitalMarketing = () => {
         des: "Effective research can benefit your company. To create a program that appeals to your target market, you must thoroughly analyze market trends, client expectations, and preferences. By conducting a thorough market analysis, you can learn more about the types of apps that are steadily gaining popularity among smartphone users."
     }, {
         title: "Determine your target audience.",
-        des: "Because every mobile application, including yours, aims to solve a problem, it is difficult to predict who your mobile application's target market is. You must conduct surveys, read online forums, and use tools to better understand your market. Personas can be used to demonstrate the needs of various audience groups. You may have a better understanding of the elements required for your company's success."
+        des: "Because every mobile application, including yours, aims to solve a problem, it is difficult to predict who your mobile application's target market is. You must conduct surveys, read online forums, and use tools to better understand your market. Personas can be used to demonstrate the needs of various audience groups..."
     },
     {
         title: "Safety comes first.",
@@ -147,8 +152,8 @@ const DigitalMarketing = () => {
                     </Box>
                 </Grid>
 
-                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px", mt: "-45px" }}>
-                    <Grid container xs={8} sx={{ bgcolor: "white", boxShadow: " 0px -2px 38px -7px rgba(0,0,0,0.44)", p: "3px", borderRadius: "15px" }}>
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px",  mt: {lg:"-45px", md:'0', sm:'', xs:''} }}>
+                    <Grid container xs={8} sx={{ bgcolor: "white", boxShadow: " 0px -2px 38px -7px rgba(0,0,0,0.44)", p: "7px 3px", borderRadius: "15px" }}>
                         <Grid item xs={12} md={6} lg={3} sx={{ borderRight: {lg:"1px solid #efefef", md:'1px solid #efefef', sm:'', xs:''}}} spacing={2}>
 
                             <Typography align='center' sx={{ fontSize: {lg:"40px", md:'35px', sm:'30px', xs:'25px'}, fontWeight: "800", color: MAIN_COLOR }} >
@@ -306,7 +311,7 @@ const DigitalMarketing = () => {
                                     six.map((ele) => {
                                         return (
                                             <Grid item xs={12} sm={6} md={6} data-aos='fade-up' sx={{ mt: "15px" , pb:'10px', }} >
-                                                <Paper sx={{ height:{lg:'180px', md:'180px', sm:'200px',xs:'205px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px",boxShadow: ' 0px 0px 13px 0px rgba(9,49,150,1)',display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column', border:`1px solid ${MAIN_COLOR}`, padding:'20px' }} elevation={3}>
+                                                <Paper sx={{ height:{lg:'180px', md:'180px', sm:'200px',xs:'220px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px",boxShadow: ' 0px 0px 13px 0px rgba(9,49,150,1)',display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column', border:`1px solid ${MAIN_COLOR}`, padding:'20px' }} elevation={3}>
                                                     <Typography sx={{ fontSize: "23px", fontWeight: "800", color: MAIN_COLOR ,}} >
                                                         {ele.title}
                                                     </Typography>
@@ -345,7 +350,7 @@ const DigitalMarketing = () => {
                                     four.map((ele) => {
                                         return (
                                             <Grid item xs={12} sm={12} md={6} data-aos='fade-up' sx={{ mt: "30px" }}>
-                                                <Paper sx={{ height: {lg:"200px", md:'200px', xs:'220px', xs:'270px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px", p: "25px", boxShadow: ' 0px 0px 13px 0px rgba(9,49,150,1)',display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column',border:`1px solid ${MAIN_COLOR}` }} elevation={3}>
+                                                <Paper sx={{ height: {lg:"210px", md:'210px', xs:'220px', xs:'280px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px", p: "25px", boxShadow: ' 0px 0px 13px 0px rgba(9,49,150,1)',display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column',border:`1px solid ${MAIN_COLOR}` }} elevation={3}>
                                                     <Typography sx={{ fontSize: "23px", fontWeight: "800", color: MAIN_COLOR , }} >
                                                         {ele.title}
                                                     </Typography>

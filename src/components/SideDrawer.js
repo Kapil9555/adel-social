@@ -8,17 +8,24 @@ import { useNavigate } from 'react-router-dom';
 
 
 const data = [
-    { title: 'Services', list: [{ service: 'Whatsapp API', path: 'whatsappapi' }, { service: 'Bulk Whatsapp', path: 'bulkwhatsapp' }, { service: 'Bulk Mailer', path: 'bulkmailer' }, { service: 'Bulk SMS', path: 'bulksms' }] },
-    { title: 'Products', list: [{ service: 'Whatsapp Web Panel', path: 'whatsappwebpanel' }] },
-    { title: 'Expertise', list: [{ service: 'Backend', path: 'dotnet' }, { service: 'Frontend', path: 'angular' }, { service: 'App Development', path: 'mobile' }, { service: 'Web Development', path: 'wordpress' }, { service: 'Digital Marketing', path: 'digital' }, { service: 'E-Commerce', path: 'ecommerce' }] }
+    { title: 'Services', list: [{ service: 'Whatsapp API', path: 'ADEL' }, { service: 'Bulk Whatsapp',  path: 'ADEL' }, { service: 'Bulk Mailer',  path: 'ADEL' }, { service: 'Bulk SMS', path: 'ADEL' }] },
+    { title: 'Products', list: [{ service: 'Whatsapp Web Panel',  path: 'ADEL' }] },
+    { title: 'Expertise', list: [{ service: 'Backend', path: '/dotnet' }, { service: 'Frontend', path: '/angular' }, { service: 'App Development', path: '/mobile' }, { service: 'Web Development', path: '/wordpress' }, { service: 'Digital Marketing', path: '/digital' }, { service: 'E-Commerce', path: '/ecommerce' }] }
 ]
 
 export default function SideDrawer() {
+   const navigate=useNavigate()
     const { state, dispatch } = React.useContext(AdelContext)
-    const navigate = useNavigate();
+
 
     const handleNavigate=(ele)=>{
-        navigate(ele)
+        if(ele=='ADEL'){
+            window.location.href="https://sms.adelsocial.com/pricing"
+        }
+        else{
+            navigate(ele)
+        }
+      
         dispatch({
             type:"DRAWER_CLOSED"
         })
@@ -29,14 +36,14 @@ export default function SideDrawer() {
             {data.map((item) => {
                 return <div key={item.title}>
                     <Box sx={{ p: '5px', bgcolor: '#0b0536', }}>
-                        <Typography textAlign={'center'} variant='h1' sx={{ fontWeight: 900, letterSpacing: '2px', fontSize: '20px' }}>
+                        <Typography textAlign={'center'} variant='h1' sx={{ fontWeight: 900, letterSpacing: '2px', fontSize: '17px' }}>
                             {item.title}
                         </Typography>
                     </Box>
                     {item.list.map((list) => {
-                        return <Box onClick={() =>handleNavigate(list.path) } key={list.service} className="controlHoverServicesParent" sx={{ mb: '10px', mt: '10px', cursor: 'pointer' }}>
+                        return <Box onClick={()=>{handleNavigate(list.path)} } key={list.service} className="controlHoverServicesParent" sx={{ mb: '3px', mt: '3px', cursor: 'pointer' }}>
                             <Box className="controlHoverServices">
-                                <Typography className='controlHoverServicesText' variant='h1' sx={{ ml: '10px', fontWeight: 500, fontSize: '18px', whiteSpace: 'nowrap' }}>
+                                <Typography className='controlHoverServicesText' variant='h1' sx={{ ml: '10px', fontWeight: 500, fontSize: '15px', whiteSpace: 'nowrap' }}>
                                     {list.service}
                                 </Typography>
                             </Box>

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { AVATAR_IMAGE, MOBILE } from './constant'
+import logoOnly from './assets/logoOnly.png'
 import Homepage from "./pages/Homepage";
 import Test from "./pages/Test";
 import DotNet from "./pages/backend/DotNet";
@@ -31,7 +32,6 @@ import Drupal from "./pages/ecommerce/Drupal";
 import Magento from "./pages/ecommerce/Meginto";
 import Woocommerce from "./pages/ecommerce/Woocommerce";
 import Wordpress from "./pages/web/Wordpress";
-import MobileDevelopment from "./pages/Mobile/Mobile";
 import DigitalMarketing from "./pages/digital/Digital";
 import Seo from "./pages/digital/Seo";
 import Ecommerce from "./pages/ecommerce/Ecommerce";
@@ -42,6 +42,7 @@ import useBottomBar from "./utils/useBottomBar";
 import SideDrawer from "./components/SideDrawer";
 import BulkMailer from "./pages/ServicesSideBar/Services/BulkMailer";
 import AndroidNewPage from "./pages/Mobile/AndroidNewPage";
+import { Box } from "@mui/material";
 
 function App() {
   const { state } = useBottomBar()
@@ -50,20 +51,22 @@ function App() {
       <div className='upArrow' style={{ left: '0px', bottom: '40px', display: 'block', position: 'fixed', cursor: 'pointer', zIndex: state.drawer_opened ? -1 : 9999 }}>
         <img onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth", }) }} src={upArrow} alt="pic" style={{ width: '100px', height: '100px', borderRadius: '100%' }} />
       </div >
+      <Box sx={{right: '0px', bottom: '40px', display: 'block', position: 'fixed', cursor: 'pointer', zIndex: state.drawer_opened ? -1 : 9999 }}>
       <FloatingWhatsApp
         accountName="AdelSocial"
         buttonClassName="whatsappButton"
-        avatar={AVATAR_IMAGE}
+        avatar={logoOnly}
         phoneNumber={`${MOBILE}`}
         statusMessage="Typically replies within 1 hour"
-        chatMessage={`Hello there! 🤝 
-How can we help?`}
+        chatMessage={`Hello there! 🤝 How can we help?`}
         darkMode={false}
         allowEsc
         allowClickAway
         notification
         notificationSound
       />
+      </Box>
+     
 
 
       <Router>

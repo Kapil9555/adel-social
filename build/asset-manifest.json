@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fe1aa0d4.css",
-    "main.js": "/static/js/main.6bc1c6da.js",
+    "main.js": "/static/js/main.4550e1f0.js",
     "static/media/hiring-modal-two.png": "/static/media/hiring-modal-two.18936b61fb51522f8c98.png",
     "static/media/hireDeveloper.jpg": "/static/media/hireDeveloper.75688cd842694a4714b7.jpg",
     "static/media/reactnative.jpg": "/static/media/reactnative.f3e964a434ef76a83392.jpg",
@@ -19,7 +19,6 @@
     "static/media/web-design.jpg": "/static/media/web-design.9f568bb86220088cfc6d.jpg",
     "static/media/webapp.png": "/static/media/webapp.98a13c21bcfc3f326bb5.png",
     "static/media/webdev.png": "/static/media/webdev.b8271119ebe61bb31bcd.png",
-    "static/media/andro2.jpg": "/static/media/andro2.db22c17d56368cff2cea.jpg",
     "static/media/pmanager.jpg": "/static/media/pmanager.dd911266f0b8f217f8c9.jpg",
     "static/media/digitalmarketingg.jpg": "/static/media/digitalmarketingg.fe6b651c064d7d4d4c53.jpg",
     "static/media/avatar.jpg": "/static/media/avatar.bc1300f7e1a8f1ab7c44.jpg",
@@ -44,11 +43,9 @@
     "static/media/offer.png": "/static/media/offer.5a95e0830e925f9ce985.png",
     "static/media/reactjs.png": "/static/media/reactjs.443ec513ef0752536b8a.png",
     "static/media/hiring-modal-one.jpg": "/static/media/hiring-modal-one.b239c5c4b4bd692cefba.jpg",
-    "static/media/andro1.jpg": "/static/media/andro1.3b0f49b6e9017fb182e3.jpg",
     "static/media/contactwall.jpg": "/static/media/contactwall.0619f7e8967be0532fff.jpg",
     "static/media/aws3.png": "/static/media/aws3.7c0eaa0d580ea605b6ec.png",
     "static/media/vacter_right.png": "/static/media/vacter_right.9d67b228dac0835d897f.png",
-    "static/media/androidstudio.png": "/static/media/androidstudio.554010a1e1fe637c1f47.png",
     "static/media/logoMain2Up.png": "/static/media/logoMain2Up.55026f2a74c658d3f220.png",
     "static/media/bg.png": "/static/media/bg.11f20519b24d982125e1.png",
     "static/media/dotnetcard1.jpg": "/static/media/dotnetcard1.059435598facc5098a42.jpg",
@@ -90,10 +87,10 @@
     "static/media/seo.svg": "/static/media/seo.961d4a085d06886e37ef3c91cdaf8edc.svg",
     "index.html": "/index.html",
     "main.fe1aa0d4.css.map": "/static/css/main.fe1aa0d4.css.map",
-    "main.6bc1c6da.js.map": "/static/js/main.6bc1c6da.js.map"
+    "main.4550e1f0.js.map": "/static/js/main.4550e1f0.js.map"
   },
   "entrypoints": [
     "static/css/main.fe1aa0d4.css",
-    "static/js/main.6bc1c6da.js"
+    "static/js/main.4550e1f0.js"
   ]
 }

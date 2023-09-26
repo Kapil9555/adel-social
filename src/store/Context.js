@@ -13,7 +13,7 @@ const initialState = {
 function handleOpenWhatsAppChat() {
        
     const phoneNumber = '9773926687';
-    const message = `Hello there! 🤝 How can we help`;
+    const message = `Hello there! 🤝 I want to connect`;
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank');
   }

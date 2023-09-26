@@ -12,6 +12,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
     const navigate = useNavigate()
+    const year= new Date().getFullYear()
+    
     const companyArray = [{ title: 'Home', path: '/' }, { title: 'Service', path: '/itservices' }, { title: 'Portfolio', path: '/' }, { title: 'Contact', path: '/contact' }].map((item, index) => {
         return <Typography onClick={() => { navigate(`${item.path}`); window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }} key={index} sx={{
              
@@ -76,7 +78,7 @@ const Footer = () => {
 
             </Grid>
             <Grid container sx={{ p: '20px', justifyContent: 'center', bgcolor: '#404343', mb: "50px" }}>
-                <Typography textAlign={'center'} sx={{ fontSize: "14px", color: '#c3c3c3' }}>Copyright © 2023 AdelSocial | All rights reserved</Typography>
+                <Typography textAlign={'center'} sx={{ fontSize: "14px", color: '#c3c3c3' }}>Copyright © {`${year}`} AdelSocial | All rights reserved</Typography>
             </Grid>
         </>
     )

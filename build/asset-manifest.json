@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a6630dc.css",
-    "main.js": "/static/js/main.1920a63d.js",
+    "main.css": "/static/css/main.a5bb7a0b.css",
+    "main.js": "/static/js/main.8f6b02f6.js",
     "static/media/hiring-modal-two.png": "/static/media/hiring-modal-two.18936b61fb51522f8c98.png",
     "static/media/hireDeveloper.jpg": "/static/media/hireDeveloper.75688cd842694a4714b7.jpg",
     "static/media/reactnative.jpg": "/static/media/reactnative.f3e964a434ef76a83392.jpg",
@@ -12,7 +12,6 @@
     "static/media/androidpage.jpg": "/static/media/androidpage.65068cc0cfdb6dbfee24.jpg",
     "static/media/awspagecopy.jpg": "/static/media/awspagecopy.49438269c53c193c8c77.jpg",
     "static/media/termcondition.jpg": "/static/media/termcondition.861a813ed5fec7a6274f.jpg",
-    "static/media/what.png": "/static/media/what.149c09a9fdcfc94bfea3.png",
     "static/media/hire-wordpress-developer-banner.jpg": "/static/media/hire-wordpress-developer-banner.a6d4de65c56f56760549.jpg",
     "static/media/gcp2.png": "/static/media/gcp2.4f857dd30dff5037c296.png",
     "static/media/ship.jpg": "/static/media/ship.fbfc77e98a8acfba77be.jpg",
@@ -87,11 +86,11 @@
     "static/media/team.svg": "/static/media/team.41b7cefc28f767a14171ccd6cc1816ee.svg",
     "static/media/seo.svg": "/static/media/seo.961d4a085d06886e37ef3c91cdaf8edc.svg",
     "index.html": "/index.html",
-    "main.4a6630dc.css.map": "/static/css/main.4a6630dc.css.map",
-    "main.1920a63d.js.map": "/static/js/main.1920a63d.js.map"
+    "main.a5bb7a0b.css.map": "/static/css/main.a5bb7a0b.css.map",
+    "main.8f6b02f6.js.map": "/static/js/main.8f6b02f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a6630dc.css",
-    "static/js/main.1920a63d.js"
+    "static/css/main.a5bb7a0b.css",
+    "static/js/main.8f6b02f6.js"
   ]
 }

@@ -24,6 +24,11 @@ export default function SideDrawer() {
         }
         else{
             navigate(ele)
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+                
+            })
         }
       
         dispatch({

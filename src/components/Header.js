@@ -51,7 +51,7 @@ export default function Header() {
                             {/* <IconButton sx={{ color: state.trigger ? SECONDARY_COLOR : MAIN_COLOR, '&:hover': { opacity: 0.6 }, transition: "all 0.70s ease", }}>
                                 <SearchOutlinedIcon />
                             </IconButton> */}
-                            <Button variant='outlined' sx={{ border: state.trigger && `1px solid ${SECONDARY_COLOR}`, color: state.trigger ? SECONDARY_COLOR : MAIN_COLOR, textTransform: 'unset', fontWeight: 900, display: { xs: 'none', sm: 'none',md:"none",lg:"block" } }}>Free Consultancy</Button>
+                            <Button variant='outlined' sx={{ border: state.trigger && `1px solid ${SECONDARY_COLOR}`,"&:hover":{border: state.trigger && `1px solid ${SECONDARY_COLOR}`}, color: state.trigger ? SECONDARY_COLOR : MAIN_COLOR, textTransform: 'unset', fontWeight: 900, display: { xs: 'none', sm: 'none',md:"none",lg:"block" } }}>Free Consultancy</Button>
                             <MenuIcon onClick={() => dispatch({ type: "DRAWER_CLICKED", payload: true })} sx={{ ml: '20px', cursor: 'pointer' }} />
                         </Box>
                         </Box>

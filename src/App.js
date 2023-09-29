@@ -1,70 +1,72 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import { AVATAR_IMAGE, MOBILE } from './constant'
-import logoOnly from './assets/logoOnly.png'
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import upArrow from '../src/assets/arrowup.png';
+import '../src/pages/Homepage.css';
+import SideDrawer from "./components/SideDrawer";
+import { AVATAR_IMAGE, MOBILE } from './constant';
+import './index.css';
+import About from "./pages/About";
+import ContactUs from "./pages/Contact";
 import Homepage from "./pages/Homepage";
+import JobOpenings from "./pages/JobOpenings";
+import AndroidNewPage from "./pages/Mobile/AndroidNewPage";
+import Flutter from "./pages/Mobile/Flutter";
+import Ios from "./pages/Mobile/Ios";
+import ReactNative from "./pages/Mobile/ReactNative";
+import HireDevelopers from "./pages/Services";
+import BulkMailer from "./pages/ServicesSideBar/Services/BulkMailer";
+import TermsAndCondition from "./pages/TermsConditions";
 import Test from "./pages/Test";
 import DotNet from "./pages/backend/DotNet";
-import upArrow from '../src/assets/arrowup.png'
-import '../src/pages/Homepage.css'
+import GraphQL from "./pages/backend/Graphql";
+import Java from "./pages/backend/Java";
 import Php from "./pages/backend/Php";
 import Python from "./pages/backend/Python";
-import Java from "./pages/backend/Java";
-import GraphQL from "./pages/backend/Graphql";
-import ReactFrontend from "./pages/frontend/React";
-import AngularFrontend from "./pages/frontend/Angular";
-import ContactUs from "./pages/Contact";
-import About from "./pages/About";
-import HireDevelopers from "./pages/Services";
-import Htmlcss from "./pages/frontend/Htmlcss";
-import VueFrontend from "./pages/frontend/Vuejs";
-import NodeFrontend from "./pages/frontend/Nodejs";
 import Aws from "./pages/devops/Aws";
 import Azure from "./pages/devops/Azure";
-import Gcp from "./pages/devops/Gcp";
 import Cybersecurity from "./pages/devops/Cybersecurity";
-import Ios from "./pages/Mobile/Ios";
-import Flutter from "./pages/Mobile/Flutter";
-import ReactNative from "./pages/Mobile/ReactNative";
-import JobOpenings from "./pages/JobOpenings";
-import Shopify from "./pages/ecommerce/Shopify";
-import Drupal from "./pages/ecommerce/Drupal";
-import Magento from "./pages/ecommerce/Meginto";
-import Woocommerce from "./pages/ecommerce/Woocommerce";
-import Wordpress from "./pages/web/Wordpress";
+import Gcp from "./pages/devops/Gcp";
 import DigitalMarketing from "./pages/digital/Digital";
 import Seo from "./pages/digital/Seo";
+import Drupal from "./pages/ecommerce/Drupal";
 import Ecommerce from "./pages/ecommerce/Ecommerce";
-import LaravelPage from "./pages/web/Laravel";
-import TermsAndCondition from "./pages/TermsConditions";
+import Magento from "./pages/ecommerce/Meginto";
+import Shopify from "./pages/ecommerce/Shopify";
+import Woocommerce from "./pages/ecommerce/Woocommerce";
+import AngularFrontend from "./pages/frontend/Angular";
+import Htmlcss from "./pages/frontend/Htmlcss";
+import NodeFrontend from "./pages/frontend/Nodejs";
+import ReactFrontend from "./pages/frontend/React";
+import VueFrontend from "./pages/frontend/Vuejs";
 import LandingLayout from "./pages/landingpage/LandingLayout";
+import LaravelPage from "./pages/web/Laravel";
+import Wordpress from "./pages/web/Wordpress";
 import useBottomBar from "./utils/useBottomBar";
-import SideDrawer from "./components/SideDrawer";
-import BulkMailer from "./pages/ServicesSideBar/Services/BulkMailer";
-import AndroidNewPage from "./pages/Mobile/AndroidNewPage";
-import { Box } from "@mui/material";
-import  WhatsApp from './assets/what.png'
-import { useContext } from "react";
-import { AdelContext } from "./store/Context";
-import './index.css'
 
 function App() {
   const { state } = useBottomBar()
-  const {handleOpenWhatsAppChat}=useContext(AdelContext)
- const handleOpenWhat =()=>{
-  handleOpenWhatsAppChat()
- }
+ 
+
   return (
     <>
       <div className='upArrow' style={{ left: '0px', bottom: '40px', display: 'block', position: 'fixed', cursor: 'pointer', zIndex: state.drawer_opened ? -1 : 9999 }}>
         <img onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth", }) }} src={upArrow} alt="pic" style={{ width: '100px', height: '100px', borderRadius: '100%' }} />
       </div >
-      <Box sx={{right: '20px', bottom:{xs:'85px',sm:"80px",md:"73px",lg:"75px"}, display: 'block', position: 'fixed', cursor: 'pointer', zIndex: state.drawer_opened ? -1 : 9999 }}>
-       <Box className="button" sx={{height:{xs:"50px",sm:"55",md:"60px",lg:"60px"},width:{xs:"50px",sm:"55",md:"60px",lg:"60px"}}} onClick={handleOpenWhat}>
-         <img src={WhatsApp} height={"100%"} width={"100%"}/>
-       </Box>
-      </Box>
-     
+      <FloatingWhatsApp
+        accountName="AdelSocial"
+        buttonClassName="whatsappButton"
+        avatar={AVATAR_IMAGE}
+        phoneNumber={`${MOBILE}`}
+        statusMessage="Typically replies within 1 hour"
+        chatMessage={`Hello there! 🤝 
+How can we help?`}
+        darkMode={false}
+        allowEsc
+        allowClickAway
+        notification
+        notificationSound
+        style={{position: 'fixed', bottom: '20px', right: '20px',zIndex:9}}
+      />
 
 
       <Router>

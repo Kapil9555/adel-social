@@ -130,7 +130,7 @@ export const jobDetails = [
     },
     {
 
-        title: 'Business Development Manager (IT & Secvices)',
+        title: 'Business Development Manager (IT & Services)',
         opening: '2 open positions',
         detail: 'The primary function of this role is to accelerate the growth of sales in Staff augmentation/Solution Model Generating leads through various platforms(DM, Upwork, LinkedIn etc.) for new projects and also penetrate existing account.Assigning ...',
         timeDate: '21/07/2023 17:10:24',
@@ -157,7 +157,7 @@ export const jobDetails = [
     },
     {
 
-        title: 'AEM Deveeloper',
+        title: 'AEM Developer',
         opening: '2 open positions',
         detail: 'Roles and Responsibilities: Significant experience in AEM(AEM 6.x versions are a must) Strong hands- on experience of Components, Templates, Taxonomy, metadata management, Forward and Reverse Replication, Workflows, Content Publishing and unpublishing, Tagging, Analytics, Deployment(Maven) ...',
         timeDate: '21/07/2023 17:10:24',
@@ -166,7 +166,7 @@ export const jobDetails = [
     },
     {
 
-        title: 'AOSP Enginner',
+        title: 'AOSP Engineer',
         opening: '2 open positions',
         detail: '· Design and Development of firmware/OS of the product.· Designing complete system, processes, methodologies as well as every component to enhance the overall performance for the customer.· Design, Develop, Integrate, Test, and maintain embedded software The ...',
         timeDate: '21/07/2023 17:10:24',
@@ -178,7 +178,7 @@ export const jobDetails = [
 
         title: 'SAP FICO Consultant',
         opening: '2 open positions',
-        detail: 'Experience 6-10 Years andidate should have knowledge of SAP Controlling Cost Center Accounting, Profit Center Accounting, Product Costing, Profitability Analysis, Project Costing, Results Analysis, Unsettled Costs, Month End Close, Overhead assessment and settlement. · Configuration knowledge CO ...',
+        detail: 'Experience 6-10 Years candidate should have knowledge of SAP Controlling Cost Center Accounting, Profit Center Accounting, Product Costing, Profitability Analysis, Project Costing, Results Analysis, Unsettled Costs, Month End Close, Overhead assessment and settlement. · Configuration knowledge CO ...',
         timeDate: '21/07/2023 17:10:24',
         key: 'SAP',
         img:sap

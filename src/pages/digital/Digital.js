@@ -16,11 +16,13 @@ import { MAIN_COLOR } from '../../constant'
 import useBottomBar from '../../utils/useBottomBar'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import BottomNavBar from '../../global/BottomNavBar'
 
 
 
 
 const DigitalMarketing = () => {
+   
     useEffect(() => {
         AOS.init({ duration: 2000 })
     }, [])
@@ -74,6 +76,7 @@ const DigitalMarketing = () => {
 
     return (
          <>
+          {state.currentScreenSize < 918 && <BottomNavBar />}
             <Header />
             <Container disableGutters maxWidth>
 
@@ -100,12 +103,12 @@ const DigitalMarketing = () => {
                                 </Box>
                             </Grid>
 
-                            <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "flex" }, justifyContent:'center', alignItems:'center', }}>
+                            <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
                                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "55%" }, lineHeight: "4.5", p: "0px 14px 14px 14px ", }}>
+                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "65%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }}>
                                         <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                             <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
-                                                <Typography align='center' sx={{ color: "white", fontSize: "17px", bgcolor: MAIN_COLOR }}>
+                                                <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:{xs:"13px"}, bgcolor: MAIN_COLOR }}>
                                                     Request a free quote
                                                 </Typography>
                                             </Box>
@@ -128,29 +131,29 @@ const DigitalMarketing = () => {
 
                     </Grid>
                 </Grid>
-                <Grid item xs={12} lg={4} sx={{ mb: "20px", mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { sm: "block", sm: "block", md: "block", lg: "none" } }}>
-                    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                        <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "60%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }} elevation={5}>
-                            <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
-                                    <Typography align='center' sx={{ color: "white", fontSize: "17px", bgcolor: MAIN_COLOR }}>
-                                        Request a free quote
-                                    </Typography>
+                <Grid item xs={12} lg={5} sx={{ mb: "20px", mt: { xs: "30px", sm: "30px", md: "30px", lg: "35px" }, display: { xs: "block", sm: "block", md: "block", lg: "none" } }}>
+                        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+                            <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }}>
+                                <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                        <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:"15px", bgcolor: MAIN_COLOR }}>
+                                            Request a free quote
+                                        </Typography>
+                                    </Box>
                                 </Box>
-                            </Box>
-                            <OutlinedInput placeholder='Full Name' fullWidth sx={{ height: "40px" }} />
-                            <OutlinedInput placeholder='Buisness Email Address' fullWidth sx={{ height: "40px" }} />
-                            <OutlinedInput placeholder='Phone Number' fullWidth sx={{ height: "40px" }} />
-                            <OutlinedInput placeholder='Oragnisation/Institution' fullWidth sx={{ height: "40px" }} />
-                            <OutlinedInput placeholder='Message' fullWidth sx={{ height: "40px" }} />
+                                <OutlinedInput placeholder='Full Name' fullWidth sx={{ height: "40px" }} />
+                                <OutlinedInput placeholder='Buisness Email Address' fullWidth sx={{ height: "40px" }} />
+                                <OutlinedInput placeholder='Phone Number' fullWidth sx={{ height: "40px" }} />
+                                <OutlinedInput placeholder='Oragnisation/Institution' fullWidth sx={{ height: "40px" }} />
+                                <OutlinedInput placeholder='Message' fullWidth sx={{ height: "40px" }} />
 
-                            <Button variant='contained' sx={{ bgcolor: MAIN_COLOR, fontSize: "17px", borderRadius: "25px", fontWeight: "800", p: "10px 15px 10px 15px", "&:hover": { bgcolor: MAIN_COLOR } }} fullWidth>
-                                submit
-                            </Button>
+                                <Button variant='contained' sx={{ bgcolor: MAIN_COLOR, fontSize: "17px", borderRadius: "25px", fontWeight: "800", p: "10px 15px 10px 15px", "&:hover": { bgcolor: MAIN_COLOR } }} fullWidth>
+                                    submit
+                                </Button>
 
-                        </Paper>
-                    </Box>
-                </Grid>
+                            </Paper>
+                        </Box>
+                    </Grid>>
 
                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px",  mt: {lg:"-45px", md:'0', sm:'', xs:''} }}>
                     <Grid container xs={8} sx={{ bgcolor: "white", boxShadow: " 0px -2px 38px -7px rgba(0,0,0,0.44)", p: "7px 3px", borderRadius: "15px" }}>

@@ -65,8 +65,6 @@ function App() {
         allowClickAway
         notification
         notificationSound
-        
-        className='floatingbutton'
       />
 
 

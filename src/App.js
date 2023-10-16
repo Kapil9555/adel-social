@@ -5,6 +5,7 @@ import '../src/pages/Homepage.css';
 import SideDrawer from "./components/SideDrawer";
 import { AVATAR_IMAGE, MOBILE } from './constant';
 import './index.css';
+import './appjs.css';
 import About from "./pages/About";
 import ContactUs from "./pages/Contact";
 import Homepage from "./pages/Homepage";
@@ -58,14 +59,14 @@ function App() {
         avatar={AVATAR_IMAGE}
         phoneNumber={`${MOBILE}`}
         statusMessage="Typically replies within 1 hour"
-        chatMessage={`Hello there! 🤝 
-How can we help?`}
+        chatMessage={`Hello there! 🤝 How can we help?`}
         darkMode={false}
         allowEsc
         allowClickAway
         notification
         notificationSound
-        style={{position: 'fixed', bottom: '20px', right: '20px',zIndex:9}}
+        
+        className='floatingbutton'
       />
 
 

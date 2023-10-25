@@ -16,6 +16,14 @@ export default function Header() {
     const navigate = useNavigate()
 
     
+    const handleNavigateHome =()=>{
+        navigate('/')
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        })
+    }
+
     return (
         <Grid item>
             <CssBaseline />
@@ -29,7 +37,7 @@ export default function Header() {
                                     {/* <img src={logo}  style={{ cursor: 'pointer',}} alt='pic' /> */}
                                      {/* <Typography sx={{ml:"10px",color:"white",fontSize:{lg:"20px",md:"20px",sm:"17px",xs:"15px"},fontWeight:"800"}}>AdelSocial</Typography> */}
                                 {/* </div> */}
-                                <Box onClick={() => navigate('/')}  sx={{ userSelect: 'none', cursor:"pointer",width: { lg: "200px", xs: "100px", md: '200px' }, height: { lg: '50px', md: '50px', xs: '40px' }, bgcolor: "white", borderRadius: '10px' }}>
+                                <Box onClick={handleNavigateHome}  sx={{ userSelect: 'none', cursor:"pointer",width: { lg: "200px", xs: "100px", md: '200px' }, height: { lg: '50px', md: '50px', xs: '40px' }, bgcolor: "white", borderRadius: '10px' }}>
                                   <img src={logo} alt='pic' width="100%" height="100%" style={{cursor:"pointer"}}/>
                                 </Box>
                             </div>

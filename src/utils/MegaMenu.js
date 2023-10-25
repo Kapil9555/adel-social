@@ -61,18 +61,39 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
     }
 
     const handleNavigator=()=>{
-        
            navigate(`${stateNavi}`)
            setStateNavi("")
             console.log(stateNavi)
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            })
     }
-   
 
-    if (data.length > 0) {
+
+   const handleNavigateItemLink =(item)=>{
+    navigate(`${item}`)
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+   }
+
+
+   const handleNavigateTitle =(item)=>{
+    navigate(`${item}`)
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+   }
+
+
+ if (data.length > 0) {
         return (
             <>
                 <Box component='div' className="dropdown" >
-                    <Button onClick={() =>handleNavigator()} disableRipple disableElevation disableTouchRipple disableFocusRipple sx={style.navTitle} endIcon={<ExpandMoreIcon />}>
+                    <Button onClick={handleNavigator} disableRipple disableElevation disableTouchRipple disableFocusRipple sx={style.navTitle} endIcon={<ExpandMoreIcon />}>
                         {title}
                     </Button>
                     <Box component='div' className="dropdown-content" sx={{ borderTop: `9px solid ${MAIN_COLOR}`, borderBottom: `9px solid ${MAIN_COLOR}` }}>
@@ -81,7 +102,7 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
                                 return <Grid item xs={2} component='div' key={index} className="column">
                                     <Typography variant='h1' onClick={() => navigate(`${item.header.item_link}`)} sx={style.megaMenuTitle} >{item.header.title}</Typography>
                                     {item.data.map((nav, i) => {
-                                        return <Typography variant='h5' key={i} onClick={() => navigate(`${nav.item_link}`)} sx={style.megaMenuItems} >{nav.title}</Typography>
+                                        return <Typography variant='h5' key={i} onClick={()=>{handleNavigateItemLink(nav.item_link)}} sx={style.megaMenuItems} >{nav.title}</Typography>
                                     })}
                                 </Grid>
                             })}
@@ -90,11 +111,12 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
                 </Box>
             </>
         )
-    } else {
+} 
+ else {
         return (
             <>
                 <Box component='div' className="dropdown">
-                    <Button onClick={() => navigate(`${navigateHandlerTitleRoute}`)} disableRipple disableElevation disableTouchRipple disableFocusRipple sx={style.navTitle} >
+                    <Button onClick={()=>{handleNavigateTitle(navigateHandlerTitleRoute)}} disableRipple disableElevation disableTouchRipple disableFocusRipple sx={style.navTitle} >
                         {title}
                     </Button>
                 </Box>

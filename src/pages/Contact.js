@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SendMessage from '../components/SendMessage';
-import { MAIN_COLOR } from '../constant';
+import { MAIN_COLOR, MOBILE } from '../constant';
 import useBottomBar from '../utils/useBottomBar';
 import BottomNavBar from '../global/BottomNavBar';
 
@@ -104,7 +104,7 @@ const ContactUs = () => {
                             <Typography variant='h5' sx={{ fontSize: { lg: '35px', md: '33px', sm: '30px', xs: '28px' }, color: '#01579b', fontWeight: '600' }}>Locate Us</Typography>
                             <Typography variant='h2' sx={{ fontSize: '18px', fontWeight: '600' }}>Malviya Nagar</Typography>
                             <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px', textAlign: 'center' }}>P-27, 17, Block P, <br />Shivalik Colony, Malviya Nagar,<br /> New Delhi, Delhi 110017, <br />info@adelsocial.com</Typography>
-                            <Typography sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' } }}><PhoneIphoneIcon fontSize='small' /> +91-9773926687</Typography>
+                            <Typography sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' } }}><PhoneIphoneIcon fontSize='small' />{MOBILE}</Typography>
                             <Grid container sx={{ mt: { lg: '15px', md: '15px', sm: '3px', xs: '0px' }, height: '200px' }}>
                                 <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                                     <Typography variant='h4' sx={{ fontSize: { lg: '26px', md: '24px', sm: '24px', xs: '24px' }, color: '#01579b', fontWeight: '600' }}>Working Hours</Typography>

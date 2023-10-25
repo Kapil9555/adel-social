@@ -61,6 +61,7 @@ function App() {
         statusMessage="Typically replies within 1 hour"
         chatMessage={`Hello there! 🤝 How can we help?`}
         darkMode={false}
+        buttonStyle={{position:"fixed",bottom:"71px"}}
         allowEsc
         allowClickAway
         notification

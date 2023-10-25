@@ -33,6 +33,14 @@ const Footer = () => {
         </Typography>
     })
 
+    const handleNavigateHome =()=>{
+        navigate('/')
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        })
+    }
+
     return (
         <>
             <Divider sx={{ border: `5px solid ${MAIN_COLOR}`, mb: '20px' }} />
@@ -40,14 +48,14 @@ const Footer = () => {
 
                 <Grid item xs={6} sm={6} md={6} lg={2} sx={{ display: "flex", justifyContent: "center" }}>
                     <Box sx={{ display: "flex", justifyContent: "flex-start", flexDirection: "column" }}>
-                        <Typography variant='h1' sx={{ color: MAIN_COLOR, fontWeight: "900", fontSize: "24px", mb: "10px" }}>Company</Typography>
+                        <Typography variant='h1' sx={{ color: MAIN_COLOR, fontWeight: "900", fontSize: "24px", mb: "10px",cursor:"pointer" }}>Company</Typography>
                         {companyArray}
                     </Box>
 
                 </Grid>
                 <Grid item xs={6} sm={6} md={6} lg={2} sx={{ display: "flex", justifyContent: "center" }}>
                     <Box sx={{ display: "flex", justifyContent: "flex-start", flexDirection: "column" }}>
-                        <Typography variant='h1' className='Box1' sx={{ color: MAIN_COLOR, fontWeight: "900", fontSize: "24px", mb: "10px" }}>Support</Typography>
+                        <Typography variant='h1' className='Box1' sx={{ color: MAIN_COLOR, fontWeight: "900", fontSize: "24px", mb: "10px",cursor:"pointer" }}>Support</Typography>
                         {supportArray}
                     </Box>
                 </Grid>
@@ -67,7 +75,7 @@ const Footer = () => {
                 <Grid item xs={12} sm={12} md={6} lg={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'center', flexDirection: 'column' }}>
                     <Box sx={{ width: "80%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                         <Box sx={{ width: "100%", display: 'flex', justifyContent: 'center' }}>
-                            <img src={adel} height="70px" width="100%" style={{ marginLeft: "-32px", }} alt='pic' />
+                            <img src={adel} height="70px" width="100%" style={{ marginLeft: "-32px",cursor:"pointer" }} alt='pic' onClick={handleNavigateHome}/>
                         </Box>
                         <Box sx={{ display: "flex", mt: "40px", justifyContent: "space-between", width: "70%", alignItems: 'center' }}>
                             {socialIcons}

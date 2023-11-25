@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5bb7a0b.css",
-    "main.js": "/static/js/main.8f6b02f6.js",
+    "main.css": "/static/css/main.4d63f556.css",
+    "main.js": "/static/js/main.0e809346.js",
     "static/media/hiring-modal-two.png": "/static/media/hiring-modal-two.18936b61fb51522f8c98.png",
     "static/media/hireDeveloper.jpg": "/static/media/hireDeveloper.75688cd842694a4714b7.jpg",
     "static/media/reactnative.jpg": "/static/media/reactnative.f3e964a434ef76a83392.jpg",
@@ -86,11 +86,11 @@
     "static/media/team.svg": "/static/media/team.41b7cefc28f767a14171ccd6cc1816ee.svg",
     "static/media/seo.svg": "/static/media/seo.961d4a085d06886e37ef3c91cdaf8edc.svg",
     "index.html": "/index.html",
-    "main.a5bb7a0b.css.map": "/static/css/main.a5bb7a0b.css.map",
-    "main.8f6b02f6.js.map": "/static/js/main.8f6b02f6.js.map"
+    "main.4d63f556.css.map": "/static/css/main.4d63f556.css.map",
+    "main.0e809346.js.map": "/static/js/main.0e809346.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5bb7a0b.css",
-    "static/js/main.8f6b02f6.js"
+    "static/css/main.4d63f556.css",
+    "static/js/main.0e809346.js"
   ]
 }

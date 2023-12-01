@@ -12,11 +12,11 @@ import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
     const navigate = useNavigate()
-    const year= new Date().getFullYear()
-    
+    const year = new Date().getFullYear()
+
     const companyArray = [{ title: 'Home', path: '/' }, { title: 'Service', path: '/itservices' }, { title: 'Portfolio', path: '/' }, { title: 'Contact', path: '/contact' }].map((item, index) => {
         return <Typography onClick={() => { navigate(`${item.path}`); window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }} key={index} sx={{
-             
+
             fontSize: '15px',
             fontWeight: "700", mt: "8px", cursor: 'pointer', borderBottom: '3px solid transparent', '&:hover': { opacity: 0.6, borderBottom: `3px solid ${HOVER_COLOR}` },
             transition: "all 0.30s ease",
@@ -27,18 +27,21 @@ const Footer = () => {
         return <Typography onClick={() => { navigate(`${item.path}`); window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }} key={index} sx={{ transition: "all 0.30s ease", fontSize: '15px', fontWeight: "700", mt: "8px", borderBottom: '3px solid transparent', '&:hover': { opacity: 0.6, borderBottom: `3px solid ${HOVER_COLOR}`, cursor: 'pointer' } }}>{item.title}</Typography>
     })
 
-    const socialIcons = [<InstagramIcon />, <FacebookIcon />, <TwitterIcon />, <LinkedInIcon />].map((item, index) => {
-        return <Typography key={index} sx={{ color: MAIN_COLOR, }}>
-            {item}
-        </Typography>
-    })
+    const socialIcons = [{icon:<InstagramIcon />,name:"insta"},{ icon:<FacebookIcon />,name:"face"}, {icon:<TwitterIcon />,name:"twit"},{ icon:<LinkedInIcon />,name:"link"}]
 
-    const handleNavigateHome =()=>{
+    const handleNavigateHome = () => {
         navigate('/')
         window.scrollTo({
-            top:0,
-            behavior:"smooth"
+            top: 0,
+            behavior: "smooth"
         })
+    }
+
+    const handleSocial =(name)=>{
+         console.log(name)
+        //  if(name == 'insta'){
+
+        //  }
     }
 
     return (
@@ -48,14 +51,14 @@ const Footer = () => {
 
                 <Grid item xs={6} sm={6} md={6} lg={2} sx={{ display: "flex", justifyContent: "center" }}>
                     <Box sx={{ display: "flex", justifyContent: "flex-start", flexDirection: "column" }}>
-                        <Typography variant='h1' sx={{ color: MAIN_COLOR, fontWeight: "900", fontSize: "24px", mb: "10px",cursor:"pointer" }}>Company</Typography>
+                        <Typography variant='h1' sx={{ color: MAIN_COLOR, fontWeight: "900", fontSize: "24px", mb: "10px", cursor: "pointer" }}>Company</Typography>
                         {companyArray}
                     </Box>
 
                 </Grid>
                 <Grid item xs={6} sm={6} md={6} lg={2} sx={{ display: "flex", justifyContent: "center" }}>
                     <Box sx={{ display: "flex", justifyContent: "flex-start", flexDirection: "column" }}>
-                        <Typography variant='h1' className='Box1' sx={{ color: MAIN_COLOR, fontWeight: "900", fontSize: "24px", mb: "10px",cursor:"pointer" }}>Support</Typography>
+                        <Typography variant='h1' className='Box1' sx={{ color: MAIN_COLOR, fontWeight: "900", fontSize: "24px", mb: "10px", cursor: "pointer" }}>Support</Typography>
                         {supportArray}
                     </Box>
                 </Grid>
@@ -75,10 +78,16 @@ const Footer = () => {
                 <Grid item xs={12} sm={12} md={6} lg={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'center', flexDirection: 'column' }}>
                     <Box sx={{ width: "80%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                         <Box sx={{ width: "100%", display: 'flex', justifyContent: 'center' }}>
-                            <img src={adel} height="70px" width="100%" style={{ marginLeft: "-32px",cursor:"pointer" }} alt='pic' onClick={handleNavigateHome}/>
+                            <img src={adel} height="70px" width="100%" style={{ marginLeft: "-32px", cursor: "pointer" }} alt='pic' onClick={handleNavigateHome} />
                         </Box>
                         <Box sx={{ display: "flex", mt: "40px", justifyContent: "space-between", width: "70%", alignItems: 'center' }}>
-                            {socialIcons}
+                            {
+                                socialIcons.map((item, index) => {
+                                    return <Typography key={index} sx={{ color: MAIN_COLOR, }} onClick={()=>{handleSocial(item.name)}}>
+                                        {item.icon}
+                                    </Typography>
+                                })
+                            }
                         </Box>
                     </Box>
 

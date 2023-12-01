@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4d63f556.css",
-    "main.js": "/static/js/main.0e809346.js",
+    "main.js": "/static/js/main.10f9892a.js",
     "static/media/hiring-modal-two.png": "/static/media/hiring-modal-two.18936b61fb51522f8c98.png",
     "static/media/hireDeveloper.jpg": "/static/media/hireDeveloper.75688cd842694a4714b7.jpg",
     "static/media/reactnative.jpg": "/static/media/reactnative.f3e964a434ef76a83392.jpg",
@@ -87,10 +87,10 @@
     "static/media/seo.svg": "/static/media/seo.961d4a085d06886e37ef3c91cdaf8edc.svg",
     "index.html": "/index.html",
     "main.4d63f556.css.map": "/static/css/main.4d63f556.css.map",
-    "main.0e809346.js.map": "/static/js/main.0e809346.js.map"
+    "main.10f9892a.js.map": "/static/js/main.10f9892a.js.map"
   },
   "entrypoints": [
     "static/css/main.4d63f556.css",
-    "static/js/main.0e809346.js"
+    "static/js/main.10f9892a.js"
   ]
 }

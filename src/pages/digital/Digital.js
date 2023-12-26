@@ -1,24 +1,22 @@
-import { Box, Button, Container, Grid, OutlinedInput, Paper, Typography } from '@mui/material'
-import React, { useEffect } from 'react'
-import digitalmarketing from '../.././assets/digitalmarketingg.jpg'
-import clutch from '../../assets/clutch.png'
-import googleFirm from '../../assets/google-firms.png'
-import wordPress from '../../assets/hire-wordpress-developer-banner.jpg'
-import hp5 from '../../assets/hp-Hero-logo.png'
-import hp4 from '../../assets/hp-Ikea-Logo.png'
-import hp3 from '../../assets/hp-Panasonic.png'
-import hp2 from '../../assets/hp-PernodRicard.png'
-import hp1 from '../../assets/hp-and.png'
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
-import SendMessage from '../../components/SendMessage'
-import { MAIN_COLOR } from '../../constant'
-import useBottomBar from '../../utils/useBottomBar'
+import { Box, Button, Container, Grid, OutlinedInput, Paper, Typography } from '@mui/material';
+import React, { useEffect } from 'react';
+import digitalmarketing from '../.././assets/digitalmarketingg.jpg';
+import clutch from '../../assets/clutch.png';
+import googleFirm from '../../assets/google-firms.png';
+import wordPress from '../../assets/hire-wordpress-developer-banner.jpg';
+import hp5 from '../../assets/hp-Hero-logo.png';
+import hp4 from '../../assets/hp-Ikea-Logo.png';
+import hp3 from '../../assets/hp-Panasonic.png';
+import hp2 from '../../assets/hp-PernodRicard.png';
+import hp1 from '../../assets/hp-and.png';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import SendMessage from '../../components/SendMessage';
+import { MAIN_COLOR } from '../../constant';
+import useBottomBar from '../../utils/useBottomBar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import BottomNavBar from '../../global/BottomNavBar'
-
-
+import BottomNavBar from '../../global/BottomNavBar';
 
 
 const DigitalMarketing = () => {
@@ -105,10 +103,10 @@ const DigitalMarketing = () => {
 
                             <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
                                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "65%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }}>
+                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px " , borderRadius:'17px'}}>
                                         <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                            <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
-                                                <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:{xs:"13px"}, bgcolor: MAIN_COLOR }}>
+                                            <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                                <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:{xs:"16px"}, bgcolor: MAIN_COLOR }}>
                                                     Request a free quote
                                                 </Typography>
                                             </Box>
@@ -133,9 +131,9 @@ const DigitalMarketing = () => {
                 </Grid>
                 <Grid item xs={12} lg={5} sx={{ mb: "20px", mt: { xs: "30px", sm: "30px", md: "30px", lg: "35px" }, display: { xs: "block", sm: "block", md: "block", lg: "none" } }}>
                         <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                            <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }}>
+                            <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "70%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px " , borderRadius:'17px' }}>
                                 <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                    <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                    <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
                                         <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:"15px", bgcolor: MAIN_COLOR }}>
                                             Request a free quote
                                         </Typography>
@@ -153,7 +151,7 @@ const DigitalMarketing = () => {
 
                             </Paper>
                         </Box>
-                    </Grid>>
+                    </Grid>
 
                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px",  mt: {lg:"-45px", md:'0', sm:'', xs:''} }}>
                     <Grid container xs={8} sx={{ bgcolor: "white", boxShadow: " 0px -2px 38px -7px rgba(0,0,0,0.44)", p: "7px 3px", borderRadius: "15px" }}>
@@ -353,7 +351,7 @@ const DigitalMarketing = () => {
                                     four.map((ele) => {
                                         return (
                                             <Grid item xs={12} sm={12} md={6} data-aos='fade-up' sx={{ mt: "30px" }}>
-                                                <Paper sx={{ height: {lg:"210px", md:'210px', xs:'220px', xs:'280px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px", p: "25px", boxShadow: ' 0px 0px 13px 0px rgba(9,49,150,1)',display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column',border:`1px solid ${MAIN_COLOR}` }} elevation={3}>
+                                                <Paper sx={{ height: {lg:"210px", md:'210px', xs:'220px', xs:'280px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px", p: "25px", boxShadow: ' 0px 0px 13px 0px rgba(9,49,150,1)',display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column',border:`1px solid ${MAIN_COLOR}`}} elevation={3}>
                                                     <Typography sx={{ fontSize: "23px", fontWeight: "800", color: MAIN_COLOR , }} >
                                                         {ele.title}
                                                     </Typography>
@@ -373,7 +371,7 @@ const DigitalMarketing = () => {
                     </Grid>
                 </Box>
                 <SendMessage />
-                <Footer />
+                <Footer/>
             </Container>
         </>
     )

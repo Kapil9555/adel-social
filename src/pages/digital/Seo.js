@@ -15,7 +15,7 @@ import { MAIN_COLOR } from '../../constant';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import digitalmarketing from '../.././assets/digitalmarketingg.jpg'
+import digitalmarketing from '../.././assets/digitalmarketingg.jpg';
 
 
 
@@ -89,9 +89,9 @@ const Seo = () => {
 
                             <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "flex" }, justifyContent:'center', alignItems:'center', }}>
                                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "55%" }, lineHeight: "4.5", p: "0px 14px 14px 14px ", }}>
+                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ",borderRadius:'17px'}}>
                                         <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                            <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                            <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
                                                 <Typography align='center' sx={{ color: "white", fontSize: "17px", bgcolor: MAIN_COLOR }}>
                                                     Request a free quote
                                                 </Typography>
@@ -103,7 +103,7 @@ const Seo = () => {
                                         <OutlinedInput placeholder='Oragnisation/Institution' fullWidth sx={{ height: "40px" }} />
                                         <OutlinedInput placeholder='Message' fullWidth sx={{ height: "40px" }} />
 
-                                        <Button variant='contained' sx={{ bgcolor: MAIN_COLOR, fontSize: "17px", borderRadius: "25px", fontWeight: "800", p: "10px 15px 10px 15px", "&:hover": { bgcolor: MAIN_COLOR } }} fullWidth>
+                                        <Button variant='contained' sx={{ bgcolor: MAIN_COLOR, fontSize: "16px", borderRadius: "25px", fontWeight: "800", p: "10px 15px 10px 15px", "&:hover": { bgcolor: MAIN_COLOR } }} fullWidth>
                                             submit
                                         </Button>
 
@@ -117,10 +117,10 @@ const Seo = () => {
                 </Grid>
                 <Grid item xs={12} lg={4} sx={{ mb: "20px", mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { sm: "block", sm: "block", md: "block", lg: "none" } }}>
                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                        <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "60%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }} elevation={5}>
+                        <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "60%" }, lineHeight: "4.5", p: "0px 14px 14px 14px ", borderRadius:'17px' }} elevation={5}>
                             <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
-                                    <Typography align='center' sx={{ color: "white", fontSize: "17px", bgcolor: MAIN_COLOR }}>
+                                <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                    <Typography align='center' sx={{ color: "white", fontSize: "15px", bgcolor: MAIN_COLOR }}>
                                         Request a free quote
                                     </Typography>
                                 </Box>
@@ -357,7 +357,7 @@ const Seo = () => {
                     </Grid>
                 </Box>
                 <SendMessage />
-                <Footer />
+                <Footer/>
             </Container>
         </>
     )

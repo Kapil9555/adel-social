@@ -13,10 +13,10 @@ const WhyUs = () => {
     const { state } = useContext(AdelContext)
     const navigate = useNavigate()
     const services = [
-        { title: 'App Development', path: '/mobile', icon: mobileapp, desc: "Our goal in mobile app design is to create an intuitive and visually appealing interface that allows users to easily navigate and interact with the app’s features and functionality.",animate:"fade-right"},
-        { title: 'Landing Page Design', path: '/welcome', icon: landing, desc: "Our goal in landing page design is to create an intuitive and visually appealing interface that allows users to easily navigate and interact with the page’s features and content.",animate:"fade-left" },
-        { title: 'Web Design', path: '/angular', icon: web, desc: "Our goal in web design is to create an intuitive and visually appealing interface that allows users to easily navigate and interact with the website’s features and content.",animate:"fade-right" },
-        { title: 'Web Development', path: '/wordpress', icon: webdev, desc: "Our goal in web development is to create an intuitive and functional website that meets our client's needs and requirements.",animate:"fade-left" }].map((item) => {
+        { title: 'App Development', path: '/mobile', icon: mobileapp, desc: "Crafting innovative mobile applications with cutting-edge technologies. Our expert team ensures seamless user experiences and efficient functionality. Elevate your business with our custom app development solutions.",animate:"fade-right"},
+        { title: 'Landing Page Design', path: '/welcome', icon: landing, desc: "Transform your brand with captivating landing page designs. We create visually stunning, user-centric pages that drive conversions. Make a lasting impression and boost engagement with our expert landing page design services.",animate:"fade-left" },
+        { title: 'Web Design', path: '/angular', icon: web, desc: "Revolutionize your online presence with our expert web design services. We craft visually stunning, user-friendly websites tailored to your brand, ensuring a seamless and engaging digital experience for your visitors.",animate:"fade-right" },
+        { title: 'Web Development', path: '/wordpress', icon: webdev, desc: "Empower your business with our comprehensive web development services. From concept to deployment, we create scalable, secure, and responsive websites, ensuring a seamless user experience and optimal performance across devices.",animate:"fade-left" }].map((item) => {
             return <Grid lg={5} md={5} sm={5} onClick={() => navigate(item.path)} className='servicesBox' item key={item.title} sx={{ backgroundImage: `url(${item.icon})`, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', p: '20px', borderRadius: '30px', m: '0px 20px 20px 0px', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} data-aos={`${item.animate}`}>
                 <Typography className='servicesBoxhead' variant='h1' sx={{ fontSize: { lg: '28px', md: '28px', sm: '20px' }, fontWeight: 900, color: 'white', m: '0px 0px 30px 20px' }}>{item.title}</Typography>
                 <Typography className='servicesBoxpara' paragraph sx={{ m: '-20px 0px 0px 20px', color: 'white', fontSize: { lg: '16px', md: '14px', sm: '13px', xs: '16px' } }} >{state.currentScreenSize < 700 ? item.desc.slice(0, 100) + '...' : item.desc}</Typography>
@@ -25,7 +25,7 @@ const WhyUs = () => {
 
 
     return (
-        <Grid container className='serviceSection' sx={{ p: { xs: '30px 2px', lg: '60px 20px', md: '60px 20px', sm: '40px 10px'},overflow:"hidden",}} data-aos="fade-up">
+        <Grid container className='serviceSection' sx={{p: { xs: '10px 2px', lg: '30px 20px', md: '30px 20px', sm: '30px 10px'},overflow:"hidden",}} data-aos="fade-up">
             <SectionHead title={"SERVICES"} tagline={"Make a customer, not a sale."} />
 
             <Grid container className='servicesSectionMiddle' sx={{ borderRadius: { xs: '20px', lg: '90px', sm: '90px', md: '90px' }, p: { xs: '10px', lg: '20px', md: '20px', sm: '20px' }, pl: { xs: '30px', lg: '45px' }, justifyContent: 'space-evenly', alignItems: 'center' }} >

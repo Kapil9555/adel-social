@@ -5,9 +5,9 @@ export const items = [
     {
         header: { title: "Frontend", item_link: '/angular' }, data: [{ title: 'Angular', item_link: "/angular" }, { title: 'React', item_link: "/react" }, { title: 'HTML/CSS', item_link: "/htmlcss" }, { title: 'Vue Js', item_link: "/vuejs" }]
     },
-    {
-        header: { title: "DevOps", item_link: '/aws' }, data: [{ title: 'AWS', item_link: "/aws" }, { title: 'Azure', item_link: "/azure" }, { title: 'GCP', item_link: "/gcp" }, { title: 'Cybersecurity', item_link: "/cybersecurity" }]
-    },
+    // {
+    //     header: { title: "DevOps", item_link: '/aws' }, data: [{ title: 'AWS', item_link: "/aws" }, { title: 'Azure', item_link: "/azure" }, { title: 'GCP', item_link: "/gcp" }, { title: 'Cybersecurity', item_link: "/cybersecurity" }]
+    // },
     {
         header: { title: "Mobile", item_link: '/mobile' }, data: [{ title: 'Android', item_link: "/android" }, { title: 'iOS', item_link: "/ios" }, { title: 'React Native', item_link: "/reactnative" }, { title: 'Flutter', item_link: "/flutter" }]
     },
@@ -42,8 +42,8 @@ export const solutionsSection = [
     {
         header: { title: "DevOps", item_link: '/' }, data: [{ title: 'DevOps Engineering ', item_link: "/" }, { title: 'Cloud Hosting', item_link: "/" }, { title: 'Cybersecurity', item_link: "/cybersecurity" }, { title: 'Cloud Migration', item_link: "/" }]
     },
-    {
-        header: { title: "Custom & Web Solutions", item_link: '/' }, data: [{ title: 'Manual', item_link: "/" }, { title: 'Automation', item_link: "/" }, { title: 'Functional', item_link: "/" }, { title: 'VAPT', item_link: "/" }]
-    },
+    // {
+    //     header: { title: "Custom & Web Solutions", item_link: '/' }, data: [{ title: 'Manual', item_link: "/" }, { title: 'Automation', item_link: "/" }, { title: 'Functional', item_link: "/" }, { title: 'VAPT', item_link: "/" }]
+    // },
 
 ]

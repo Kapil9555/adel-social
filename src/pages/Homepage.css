@@ -235,10 +235,10 @@ height: 270px;
 }
   @media only screen and (max-width: 630px) {
     .servicesBoxhead{
-      font-size: 15px !important;
+      font-size: 16px !important;
     }
       .servicesBoxpara{
-      font-size: 12px !important;
+      font-size: 14px !important;
     }
 .servicesBox{
 height: 300px;
@@ -281,10 +281,10 @@ width: 100%;
 
   @media only screen and (max-width: 610px) {
     .servicesBoxhead{
-      font-size: 15px !important;
+      font-size: 16px !important;
     }
       .servicesBoxpara{
-      font-size: 12px !important;
+      font-size: 14px !important;
     }
 .servicesBox{
 height: 310px;
@@ -322,8 +322,6 @@ width: 100%;
         .card {
             position: relative;
             cursor: pointer;
-            width: 280px;
-            height: 280px;
             text-align: center;
             padding: 1em 2em;
             color: #fff;

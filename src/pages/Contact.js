@@ -66,13 +66,13 @@ const ContactUs = () => {
                                     <Grid item xs={12}>
                                         <TextField variant="outlined" placeholder='Message' size='small' fullWidth />
                                     </Grid>
-                                    <Grid item lg={4} md={6} sm={6} xs={12} sx={{ border: '1px solid #d3d3d3', mt: '30px', padding: '5px', borderRadius: '7px', backgroundColor: '#f9f9f9' }}>
+                                    {/* <Grid item lg={4} md={6} sm={6} xs={12} sx={{ border: '1px solid #d3d3d3', mt: '30px', padding: '5px', borderRadius: '7px', backgroundColor: '#f9f9f9' }}>
                                         <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', }}>
                                             <Box>
                                                 <Typography sx={{ display: 'none', fontSize: '13px', color: 'red' }}>Verification expired. check the checkbox again</Typography>
                                                 <FormGroup>
                                                     <FormControlLabel control={<Checkbox />} label="I'm not a robot" sx={{ color: 'grey', }} fontSize='20px' />
-                                                    {/* <FormControlLabel required control={<Checkbox />} label="Required" /> */}
+                                                    
                                                 </FormGroup>
                                             </Box>
 
@@ -82,11 +82,11 @@ const ContactUs = () => {
                                                 <Typography sx={{ fontSize: '10px', color: 'grey' }}>privacy-Terms</Typography>
                                             </Box>
                                         </Box>
-                                    </Grid>
-                                    <Grid item lg={12} md={12} sm={12} xs={12} >
+                                    </Grid> */}
+                                    {/* <Grid item lg={12} md={12} sm={12} xs={12} >
                                         <Typography sx={{ fontSize: '15px', fontWeight: '600', mt: '20px' }}>Note: I consent that my personal data will be processed according to <span style={{ color: '#1976d2' }}>AdelSocial' privacy policy </span>  </Typography>
-                                    </Grid>
-                                    <Grid item xs={12} sx={{ textAlign: 'right', mt: { lg: "2px", md: '3px', sm: '5px', xs: '6px' } }}>
+                                    </Grid> */}
+                                    <Grid item xs={12} sx={{ textAlign: 'center', mt: '15px' }}>
                                         <Button variant='contained' sx={{ borderRadius: '10px', padding: '8px 17px' }}>Submit</Button>
                                     </Grid>
                                 </Grid>
@@ -103,7 +103,7 @@ const ContactUs = () => {
                         <Grid item lg={5} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '10px', xs: '15px' }, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
                             <Typography variant='h5' sx={{ fontSize: { lg: '35px', md: '33px', sm: '30px', xs: '28px' }, color: '#01579b', fontWeight: '600' }}>Locate Us</Typography>
                             <Typography variant='h2' sx={{ fontSize: '18px', fontWeight: '600' }}>Malviya Nagar</Typography>
-                            <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px', textAlign: 'center' }}>P-27, 17, Block P, <br />Shivalik Colony, Malviya Nagar,<br /> New Delhi, Delhi 110017, <br />info@adelsocial.com</Typography>
+                            <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px', textAlign: 'center' }}>P-27, Block P, <br />Shivalik Colony, Malviya Nagar,<br /> New Delhi, Delhi 110017, <br />info@adelsocial.com</Typography>
                             <Typography sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' } }}><PhoneIphoneIcon fontSize='small' />{MOBILE}</Typography>
                             <Grid container sx={{ mt: { lg: '15px', md: '15px', sm: '3px', xs: '0px' }, height: '200px' }}>
                                 <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
@@ -118,7 +118,7 @@ const ContactUs = () => {
                     </Grid>
 
                 </Container>
-            </Grid >
+            </Grid>
             <SendMessage />
             <Footer />
         </>

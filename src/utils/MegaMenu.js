@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { HOVER_COLOR, MAIN_COLOR, SECONDARY_COLOR } from '../constant'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+// import "@fontsource/lora"; // Defaults to weight 400
+import "@fontsource/lora/700.css"; // Specify weight
+// import "@fontsource/lora/400-italic.css";
 
 // format of getting data as a prop
 // const items = [
@@ -21,19 +24,18 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
     const [ stateNavi,setStateNavi]=useState(navigateHandlerTitleRoute)
     const style = {
         navTitle: {
-            '&:hover': { opacity: 0.6, borderBottom: `3px solid ${HOVER_COLOR}` },
+            '&:hover': {borderBottom: `3px solid ${HOVER_COLOR}` },
             transition: "all 0.50s ease",
             mr: "20px",
-            color: SECONDARY_COLOR,
+            color:MAIN_COLOR,
             cursor: "pointer",
             textDecoration: "none",
             borderBottom: '3px solid transparent',
             padding: '5px 5px',
             textTransform: 'unset',
             fontSize: {lg:'18px',md:"17px",sm:"15px",xs:"13px"},
-            fontWeight: 900,
-        
-          
+            fontWeight: 700,
+            fontFamily:"lora",
         },
         megaMenuTitle: {
             '&:hover': { cursor: 'pointer' },
@@ -97,12 +99,12 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
                         {title}
                     </Button>
                     <Box component='div' className="dropdown-content" sx={{ borderTop: `9px solid ${MAIN_COLOR}`, borderBottom: `9px solid ${MAIN_COLOR}` }}>
-                        <Grid container className="row">
+                        <Grid container className="row" justifyContent={'center'}>
                             {data.map((item, index) => {
-                                return <Grid item xs={2} component='div' key={index} className="column">
-                                    <Typography variant='h1' onClick={() => navigate(`${item.header.item_link}`)} sx={style.megaMenuTitle} >{item.header.title}</Typography>
+                                return <Grid item xs={1.6} component='div' key={index} className="column" sx={{pl:"20px",display:"flex",flexDirection:"column",alignItems:"center"}}>
+                                    <Typography variant='h1' color={'secondary'} align='center' onClick={() => navigate(`${item.header.item_link}`)} sx={style.megaMenuTitle} >{item.header.title}</Typography>
                                     {item.data.map((nav, i) => {
-                                        return <Typography variant='h5' key={i} onClick={()=>{handleNavigateItemLink(nav.item_link)}} sx={style.megaMenuItems} >{nav.title}</Typography>
+                                        return <Typography variant='h5' align='center' key={i} onClick={()=>{handleNavigateItemLink(nav.item_link)}} sx={style.megaMenuItems} >{nav.title}</Typography>
                                     })}
                                 </Grid>
                             })}

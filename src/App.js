@@ -43,6 +43,7 @@ import LandingLayout from "./pages/landingpage/LandingLayout";
 import LaravelPage from "./pages/web/Laravel";
 import Wordpress from "./pages/web/Wordpress";
 import useBottomBar from "./utils/useBottomBar";
+import Practise from './Practise';
 
 function App() {
   const { state } = useBottomBar()
@@ -52,7 +53,7 @@ function App() {
     <>
       <div className='upArrow' style={{ left: '0px', bottom: '40px', display: 'block', position: 'fixed', cursor: 'pointer', zIndex: state.drawer_opened ? -1 : 9999 }}>
         <img onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth", }) }} src={upArrow} alt="pic" style={{ width: '100px', height: '100px', borderRadius: '100%' }} />
-      </div >
+      </div>
       <FloatingWhatsApp
         accountName="AdelSocial"
         buttonClassName="whatsappButton"
@@ -120,11 +121,7 @@ function App() {
           <Route exact path="welcome" element={<LandingLayout />} />
           {/* services of sidebar */}
           <Route exact path="bulkmailer" element={<BulkMailer />} />
-        
-
-
-         
-
+          <Route exact path='extra' element={<Practise/>}/>
         </Routes>
       </Router>
     </>

@@ -1,4 +1,4 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Container, Grid, Paper, Typography } from '@mui/material'
+import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Container, Grid, OutlinedInput, Paper, Typography } from '@mui/material'
 import React from 'react'
 import TopBanner from '../../assets/TopBanner.jpg'
 import react from '../../assets/reactjs.png'
@@ -20,6 +20,7 @@ import useBottomBar from '../../utils/useBottomBar'
 import BottomNavBar from '../../global/BottomNavBar'
 
 
+
 const ReactFrontend = () => {
     const { state } = useBottomBar()
     return (
@@ -27,21 +28,88 @@ const ReactFrontend = () => {
             <Header />
             {state.currentScreenSize < 918 && <BottomNavBar />}
             <Container disableGutters maxWidth="xl">
-                <Grid container sx={{ height: "400px", backgroundImage: `url(${react})`, bgcolor: 'rgb(90,90,90)', backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundBlendMode: "multiply" }}>
-                    <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
-                    <Grid item xs={12} sm={10} md={8} lg={7} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ width: "100%", lineHeight: "7", p: "10px" }}>
-                            <Typography sx={{ fontSize: "40px", fontWeight: "900", color: "white" }}>
-                                Hire ReactJs Developer
-                            </Typography>
-                            <Typography sx={{ color: "white", fontSize: { lg: "16px", xs: '12px', md: '16px' } }}>
-                                Our ReactJs developers streamline your business with next-gen web app development services.
+                
+                 {/* new section  */}
+                 <Grid container>
+                    <Grid item xs={12} sx={{ backgroundImage: `url(${react})`,bgcolor: 'rgb(90,90,90)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundBlendMode: "multiply", backgroundPosition: 'center', p:{lg:"50px",md:"50px",sm:"30px 15px",xs:"30px 10px"} }}>
+
+                        <Grid container sx={{ p: "10px" }}>
+                            <Grid item xs={2} sm={2} md={1} lg={1} >
+
+                            </Grid>
+
+                            <Grid item xs={12} sm={12} md={10} lg={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                <Box sx={{ lineHeight: "10", pt: '40px' }}>
+                                    <Box>
+                                        <Typography variant='h3' sx={{ fontWeight: "800", color: "white", fontSize: { lg: '50px', xs: '30px' } }}>
+                                        Hire ReactJs<Box style={{ color: MAIN_COLOR, fontWeight: 900, fontSize: { lg: '80px', xs: '40px' }, backgroundColor: 'black', padding: '0px 0px', borderRadius: '10px', width: 'fit-content' }}>Developers</Box>
+                                        </Typography>
+                                        <Typography sx={{ color: "white", mt: "20px", fontSize: { lg: "15px", xs: '13px', md: '18px' } }}>
+                                        Our ReactJs developers streamline your business with next-gen web app development services.
                                 Take your business to new heights with our ReactJS app development services.
-                            </Typography>
-                            <Button variant='contained' sx={{ borderRadius: "25px", p: '10px 30px' }}>
+                                        </Typography>
+                                        <Box sx={{ mt: "40px", display: "flex", justifyContent: { xs: "center", sm: "center", md: "center", lg: "left" } }}>
+                                        <Button variant='contained' sx={{ borderRadius: "25px", p: '10px 30px' }}>
                                 Talk to Us
                             </Button>
+                                        </Box>
+                                    </Box>
+                                </Box>
+                            </Grid>
+
+                            <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
+                                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ",borderRadius: '17px' }}>
+                                        <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                            <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                                <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:{xs:"16px"}, bgcolor: MAIN_COLOR }}>
+                                                    Request a free quote
+                                                </Typography>
+                                            </Box>
+                                        </Box>
+                                        <OutlinedInput placeholder='Full Name' fullWidth sx={{ height: "40px" }} />
+                                        <OutlinedInput placeholder='Buisness Email Address' fullWidth sx={{ height: "40px" }} />
+                                        <OutlinedInput placeholder='Phone Number' fullWidth sx={{ height: "40px" }} />
+                                        <OutlinedInput placeholder='Oragnisation/Institution' fullWidth sx={{ height: "40px" }} />
+                                        <OutlinedInput placeholder='Message' fullWidth sx={{ height: "40px" }} />
+
+                                        <Button variant='contained' sx={{ bgcolor: MAIN_COLOR, fontSize: "17px", borderRadius: "25px", fontWeight: "800", p: "10px 15px 10px 15px", "&:hover": { bgcolor: MAIN_COLOR } }} fullWidth>
+                                            submit
+                                        </Button>
+
+                                    </Paper>
+                                </Box>
+                            </Grid>
+
+                        </Grid>
+
+                    </Grid>
+
+                    <Grid item xs={12} lg={5} sx={{ mb: "20px", mt: { xs: "30px", sm: "30px", md: "30px", lg: "35px" }, display: { xs: "block", sm: "block", md: "block", lg: "none" } }}>
+                        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+                            <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ",borderRadius: '17px' }}>
+                                <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                        <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:"15px", bgcolor: MAIN_COLOR }}>
+                                            Request a free quote
+                                        </Typography>
+                                    </Box>
+                                </Box>
+                                <OutlinedInput placeholder='Full Name' fullWidth sx={{ height: "40px" }} />
+                                <OutlinedInput placeholder='Buisness Email Address' fullWidth sx={{ height: "40px" }} />
+                                <OutlinedInput placeholder='Phone Number' fullWidth sx={{ height: "40px" }} />
+                                <OutlinedInput placeholder='Oragnisation/Institution' fullWidth sx={{ height: "40px" }} />
+                                <OutlinedInput placeholder='Message' fullWidth sx={{ height: "40px" }} />
+
+                                <Button variant='contained' sx={{ bgcolor: MAIN_COLOR, fontSize: "17px", borderRadius: "25px", fontWeight: "800", p: "10px 15px 10px 15px", "&:hover": { bgcolor: MAIN_COLOR } }} fullWidth>
+                                    submit
+                                </Button>
+
+                            </Paper>
                         </Box>
+                    </Grid>
+                    <Grid item>
+                        <Typography variant='h3'></Typography>
                     </Grid>
                 </Grid>
 
@@ -361,7 +429,6 @@ const ReactFrontend = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
-
                                         We are available on all communication channels such as Microsoft Teams, Google Meet, Zoom Call, Phone, Live Chats, and Emails to keep you informed of the current status of your .NET development project.
                                     </Typography>
                                 </AccordionDetails>
@@ -369,7 +436,7 @@ const ReactFrontend = () => {
                         </Box>
                     </Box>
                 </Grid>
-                <Footer />
+                <Footer/>
             </Container>
 
         </>

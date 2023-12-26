@@ -1,9 +1,6 @@
 import { Box, Button, Grid, OutlinedInput, Paper, Typography } from '@mui/material'
 import Laravel from '../../assets/hire-wordpress-developer-banner.jpg'
 import LaravelHire from '../../assets/wordpress-development-services-1.jpg'
-
-
-
 import CheckIcon from '@mui/icons-material/Check';
 import clutch from '../../assets/clutch.png'
 import googleFirm from '../../assets/google-firms.png'
@@ -25,6 +22,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import HubIcon from '@mui/icons-material/Hub';
+
 
 
 
@@ -70,9 +68,9 @@ const LaravelPage = () => {
 
                         <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "flex" }, justifyContent:'center', alignItems:'center', }}>
                                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "55%" }, lineHeight: "4.5", p: "0px 14px 14px 14px ", }}>
+                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ",borderRadius:'17px' }}>
                                         <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                            <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                            <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
                                                 <Typography align='center' sx={{ color: "white", fontSize: "17px", bgcolor: MAIN_COLOR }}>
                                                     Request a free quote
                                                 </Typography>
@@ -98,10 +96,10 @@ const LaravelPage = () => {
             </Grid>
             <Grid item xs={12} lg={4} sx={{ mb: "20px", mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { sm: "block", sm: "block", md: "block", lg: "none" } }}>
                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                        <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "60%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }} elevation={5}>
+                        <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "60%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px " , borderRadius:'17px'}} elevation={5}>
                             <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
-                                    <Typography align='center' sx={{ color: "white", fontSize: "17px", bgcolor: MAIN_COLOR }}>
+                                <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                    <Typography align='center' sx={{ color: "white", fontSize: "15px", bgcolor: MAIN_COLOR }}>
                                         Request a free quote
                                     </Typography>
                                 </Box>
@@ -402,7 +400,7 @@ const LaravelPage = () => {
                 </Grid>
             </Box>
             <SendMessage />
-            <Footer />
+            <Footer/>
         </>
     )
 }

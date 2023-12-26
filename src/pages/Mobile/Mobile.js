@@ -10,6 +10,7 @@ import SendMessage from '../../components/SendMessage'
 import BottomNavBar from '../../global/BottomNavBar'
 import useBottomBar from '../../utils/useBottomBar'
 
+
 const MobileDevelopment = () => {
     const { state } = useBottomBar()
     return (
@@ -76,7 +77,7 @@ const MobileDevelopment = () => {
             </Grid>
             <Typography textAlign={'center'} fontWeight={900} fontSize={'20px'} m="20px">App development is a significant aspect of any business which is done after proper planning, analysis, and monitoring of our services well. </Typography>
             <SendMessage />
-            <Footer />
+            <Footer/>
         </>
     )
 }

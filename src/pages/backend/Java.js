@@ -35,6 +35,7 @@ import { useEffect } from 'react';
 
 
 
+
 const Java = () => {
     
     const { state } = useBottomBar()
@@ -261,10 +262,10 @@ const Java = () => {
 
                         <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
                             <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "65%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }}>
+                                <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ",borderRadius: '17px' }}>
                                     <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                        <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
-                                            <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:{xs:"13px"}, bgcolor: MAIN_COLOR }}>
+                                        <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                            <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:{xs:"16px"}, bgcolor: MAIN_COLOR }}>
                                                 Request a free quote
                                             </Typography>
                                         </Box>
@@ -289,9 +290,9 @@ const Java = () => {
 
                 <Grid item xs={12} lg={5} sx={{ mb: "20px", mt: { xs: "30px", sm: "30px", md: "30px", lg: "35px" }, display: { xs: "block", sm: "block", md: "block", lg: "none" } }}>
                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                        <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }}>
+                        <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, lineHeight: "3.8", p: "0px 14px 14px 14px " ,borderRadius: '17px'}}>
                             <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
                                     <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:"15px", bgcolor: MAIN_COLOR }}>
                                         Request a free quote
                                     </Typography>
@@ -372,7 +373,7 @@ const Java = () => {
                     </Typography>
 
                     <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
-                        <Box data-aos='fade-up' sx={{ mt: "20px", height: { xs: "300px", sm: "300px", md: "380px", lg: "420px" } }}>
+                        <Box data-aos='fade-up' sx={{ mt: "20px", height: { xs: "300px", sm: "300px", md: "320px", lg: "400px" } }}>
                             <img src={orangenet} style={{ borderRadius: '90px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
                         </Box>
                         <Box sx={{ml:'30px'}}>
@@ -491,24 +492,24 @@ const Java = () => {
                     </Box>
                 </Box>
                 <Box sx={{ display: "flex", justifyContent: "center", mt: "20px" }}>
-                    <Grid container sx={{ width: { xs: "99%", sm: "99%", md: "70%", lg: "80%" }, display:'flex', justifyContent:'space-between', alignItems:'center', bgcolor:'black', borderRadius:'10px'}} >
-                        {
-                            AllBuisness.map((ele) => {
-                                return (
-                                    <Grid item xs={12} sm={12} md={6} lg={2.8} sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)',m:'5px', m:'10px 9px' ,borderRadius:'10px'}} >
-                                        <Box data-aos='fade-up' sx={{height:'210px', bgcolor:'black',borderRadius:'10px', border:'1px solid #0277bd'}}>
-                                            <Box sx={{ p: "20px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                                                {ele.icon}
-                                                <Typography align='center' sx={{ fontSize: "28px", fontWeight: "800", color: 'white' }}>{ele.name}</Typography>
+                        <Grid container sx={{ width: { xs: "99%", sm: "80%", md: "70%", lg: "80%" }, display: 'flex', justifyContent: 'space-between', alignItems: 'center', bgcolor: 'black', borderRadius: '10px' }} >
+                            {
+                                AllBuisness.map((ele) => {
+                                    return (
+                                        <Grid item xs={12} sm={12} md={5.6} lg={2.8} sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)', m: '5px 8px', borderRadius: '10px' }} >
+                                            <Box data-aos='fade-up' sx={{ height: '210px', bgcolor: 'black', borderRadius: '10px', border: '1px solid #0277bd' }}>
+                                                <Box sx={{ p: "20px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+                                                    {ele.icon}
+                                                    <Typography align='center' sx={{ fontSize: "28px", fontWeight: "800", color: 'white' }}>{ele.name}</Typography>
+                                                </Box>
                                             </Box>
-                                        </Box>
-                                    </Grid>
-                                )
-                            })
-                        }
+                                        </Grid>
+                                    )
+                                })
+                            }
 
-                    </Grid>
-                </Box>
+                        </Grid>
+                    </Box>
             </Grid>
 
             <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
@@ -785,7 +786,7 @@ const Java = () => {
 
             <Footer />
 
-        </Container >
+        </Container>
 
     </>
     )

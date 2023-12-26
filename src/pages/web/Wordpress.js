@@ -26,6 +26,7 @@ import HubIcon from '@mui/icons-material/Hub';
 
 
 
+
 const Wordpress = () => {
     useEffect(() => {
         AOS.init({ duration: 2000 })
@@ -68,9 +69,9 @@ const Wordpress = () => {
 
                         <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
                                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "65%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }}>
+                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ", borderRadius:'17px' }}>
                                         <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                            <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                            <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
                                                 <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:{xs:"13px"}, bgcolor: MAIN_COLOR }}>
                                                     Request a free quote
                                                 </Typography>
@@ -96,9 +97,9 @@ const Wordpress = () => {
             </Grid>
             <Grid item xs={12} lg={5} sx={{ mb: "20px", mt: { xs: "30px", sm: "30px", md: "30px", lg: "35px" }, display: { xs: "block", sm: "block", md: "block", lg: "none" } }}>
                         <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                            <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, lineHeight: "4.5", p: "0px 14px 14px 14px " }}>
+                            <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ", borderRadius:'17px' }}>
                                 <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                    <Box sx={{ p: "20px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
+                                    <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
                                         <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:"15px", bgcolor: MAIN_COLOR }}>
                                             Request a free quote
                                         </Typography>
@@ -400,7 +401,7 @@ const Wordpress = () => {
                 </Grid>
             </Box>
             <SendMessage />
-            <Footer />
+            <Footer/>
         </>
     )
 }

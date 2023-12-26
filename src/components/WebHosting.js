@@ -80,7 +80,7 @@ const WebHosting = () => {
 
     return (
         <>
-            <Grid container sx={{ padding: '60px 20px', justifyContent: 'center',overflow:"hidden" }}  data-aos="fade-up">
+            <Grid container sx={{ padding: '0px 20px', justifyContent: 'center',overflow:"hidden" }}  data-aos="fade-up">
                 <SectionHead title={"AFFORDABLE DOMAIN & HOSTING"} tagline={"Make a customer, not a sale."} />
                 <Grid container className='webHostingBox' alignItems={'flex-start'} height={'fit-content'} sx={{ pb: '40px', borderRadius: { lg: '90px', xs: '20px' }, backgroundImage: `url(${webbg})`, backgroundPosition: 'top', backgroundSize: '100% 60%', backgroundRepeat: 'no-repeat', border: '1px solid lightgray' }}>
                     <Grid item xs={12} lg={12} sx={{ p: '40px', display: 'flex', justifyContent: 'center', borderRadius: '90px' }}>

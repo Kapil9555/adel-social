@@ -12,29 +12,30 @@ import laravel from '../assets/laravel.png'
 import fullstack from '../assets/full-stack.png'
 
 import '../pages/Homepage.css'
-import { Box, Container } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { useContext, useState } from "react";
 import { AdelContext } from "../store/Context";
 import { useNavigate } from "react-router-dom";
 
 const OurExpertise = () => {
     const [isMouseDown, setIsMouseDown] = useState(true)
+
     const navigate = useNavigate()
     const { state } = useContext(AdelContext)
     const services = [
-        { title: 'WordPress', path: 'wordpress', icon: wordpress, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Python', path: 'python', icon: python, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Flutter', path: 'flutter', icon: flutter, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Shopify', path: 'shopify', icon: shopify, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'React JS', path: 'react', icon: reactjs, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Laravel', path: '/', icon: laravel, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Angular JS', path: 'angular', icon: angular, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'FullStack', path: '/', icon: fullstack, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Node JS', path: 'nodejs', icon: node, desc: 'Drive your online business with robust capabilities of Shopify solutions.' }].map((item) => {
-            return <div onClick={() => navigate(item.path)} onMouseDown={() => (setIsMouseDown(false))} onMouseOut={() => (setIsMouseDown(true))} key={item.title} className="card-container">
-                <div className="card">
+        { title: 'WordPress', path: 'wordpress', icon: wordpress, desc: 'WordPress: Powering websites with user-friendly content management, themes, and plugins.' },
+        { title: 'Python', path: 'python', icon: python, desc: 'Python: Versatile, high-level programming language fostering simplicity, readability, and robust development.' },
+        { title: 'Flutter', path: 'flutter', icon: flutter, desc: 'Flutter: Google UI toolkit for building natively compiled applications with expressive, beautiful interfaces.' },
+        { title: 'Shopify', path: 'shopify', icon: shopify, desc: 'Shopify: E-commerce platform simplifying online store creation and management for businesses.' },
+        { title: 'React JS', path: 'react', icon: reactjs, desc: 'React.js: Building efficient, interactive user interfaces with a declarative and component-based approach.' },
+        { title: 'Laravel', path: '/', icon: laravel, desc: 'Laravel: Elegant PHP framework providing expressive syntax and robust tools for web development.' },
+        { title: 'Angular JS', path: 'angular', icon: angular, desc: 'AngularJS: Streamlining web development with dynamic, two-way data binding and modular, efficient components.' },
+        { title: 'FullStack', path: '/', icon: fullstack, desc: 'Full Stack: Expertise in front-end and back-end technologies for holistic application development.' },
+        { title: 'Node JS', path: 'nodejs', icon: node, desc: 'Node.js: Lightweight, scalable, and efficient JavaScript runtime for server-side applications.' }].map((item) => {
+            return <Box onClick={() => navigate(item.path)} onMouseDown={() => (setIsMouseDown(false))} onMouseOut={() => (setIsMouseDown(true))} key={item.title} className="card-container" sx={{display: "flex", justifyContent: "center" }}>
+                <Box className="card" sx={{ height: { lg: "280px", md: "280px", sm: "280px", xs: "280px" }, width: { lg: "280px", md: "280px", sm: "280px", xs: "280px" } }}>
                     <h1><strong>{item.title}</strong></h1>
-                    <p>{item.desc}</p>
+                    <Typography sx={{}}>{item.desc}</Typography>
                     <img width="70px" height={"50px"} src={item.icon} alt="pic" />
                     <div className="layers">
                         <div className="layer"></div>
@@ -48,8 +49,8 @@ const OurExpertise = () => {
                         <div className="layer"></div>
                         <div className="layer"></div>
                     </div>
-                </div>
-            </div>
+                </Box>
+            </Box>
 
         })
     return (
@@ -57,9 +58,9 @@ const OurExpertise = () => {
         <Box component={'div'} sx={{ padding: { lg: '20px', xs: '10px' }, width: '100%' }}>
             <SectionHead title={"OUR TECHNOLOGIES EXPERTISE"} tagline={"Building Your Digital Future with Expertise and Excellence"} />
 
-            <Box component='div' className='scrollTechParent' sx={{ p: { lg: '40px', md: '40px', sm: '40px', xs: "30px 10px" }, width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'nowrap', borderRadius: { lg: '100px', xs: '20px', sm: '100px', md: '100px' } }}>
+            <Box component='div' className='scrollTechParent' sx={{ p: { xs: '10px 2px', lg: '30px 20px', md: '30px 20px', sm: '30px 10px' }, width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'nowrap', overflow: "hidden", borderRadius: { lg: '100px', xs: '10px', sm: '100px', md: '100px' } }}>
                 <Container disableGutters sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <div className="scrollTech" style={{ width: state.currentScreenSize < 1000 && state.currentScreenSize > 800 ? '50%' : '100%', padding: '0px' }}>
+                    <div className="scrollTech" style={{ width: state.currentScreenSize < 1000 && state.currentScreenSize > 800 ? '90%' : '100%', padding: '0px'}}>
                         <Carousel
                             additionalTransfrom={0}
                             arrows={state.currentScreenSize < 600 ? false : true}
@@ -80,32 +81,27 @@ const OurExpertise = () => {
                             renderArrowsWhenDisabled={false}
                             renderButtonGroupOutside={false}
                             renderDotsOutside={false}
-                            responsive={{
-                                desktop: {
-                                    breakpoint: {
-                                        max: 3000,
-                                        min: 1024
+                            responsive={
+                                {
+                                    superLargeDesktop: {
+                                        // the naming can be any, depends on you.
+                                        breakpoint: { max: 4000, min: 3000 },
+                                        items: 5
                                     },
-                                    items: 3,
-                                    partialVisibilityGutter: 40
-                                },
-                                mobile: {
-                                    breakpoint: {
-                                        max: 464,
-                                        min: 0
+                                    desktop: {
+                                        breakpoint: { max: 3000, min: 1024 },
+                                        items: 3
                                     },
-                                    items: 1,
-                                    partialVisibilityGutter: 30
-                                },
-                                tablet: {
-                                    breakpoint: {
-                                        max: 1024,
-                                        min: 464
+                                    tablet: {
+                                        breakpoint: { max: 1024, min: 464 },
+                                        items: 1
                                     },
-                                    items: 2,
-                                    partialVisibilityGutter: 30
+                                    mobile: {
+                                        breakpoint: { max: 464, min: 0 },
+                                        items: 1
+                                    }
                                 }
-                            }}
+                            }
                             rewind={true}
                             rewindWithAnimation={true}
                             rtl={false}
@@ -125,7 +121,7 @@ const OurExpertise = () => {
             </Box>
 
 
-        </Box >
+        </Box>
 
     )
 }

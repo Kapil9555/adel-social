@@ -31,8 +31,7 @@ const Homepage = () => {
     },[])
 
     return (
-
-        <>
+           <>
             {state.currentScreenSize < 918 && <BottomNavBar />}
             <CustomModal />
             <Grid container className='mainboxHomepage' sx={{ p: '100px', pb: { lg: '30px', xs: '10px', sm: '30px', md: '30px' }, backgroundImage: `url(${bg})`, backgroundPosition: 'center', backgroundSize: 'cover', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
@@ -49,7 +48,7 @@ const Homepage = () => {
             <WebHosting />
             <SendMessage />
             <Footer />
-        </>
+           </>
        
     )
 }

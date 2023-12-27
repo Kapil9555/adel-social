@@ -165,14 +165,14 @@ const Footer = () => {
                         </Grid>
                         <Grid item lg={3} md={5} sm={5} xs={12} sx={{ height: '100%', width: '400px', display: "flex", justifyContent: "center", alignItems: 'center', }}>
                             <Grid container sx={{display:'flex', justifyContent:'center', alignItems:'flex-start', p:'15px'}}>
-                                <Grid item xs={6} sx={{display:'flex', justifyContent:'left', alignItems:'center',}}>
+                                <Grid item xs={6} sx={{display:'flex', justifyContent:'center', alignItems:'center',}}>
                                     <Box sx={{ display: "flex", justifyContent: "flex-start", flexDirection: "column" }}>
                                         <Typography variant='h1' sx={{ color: MAIN_COLOR, fontWeight: "900", fontSize: {lg:'28px', md:'26px' ,sm:'24px',xs:'20px'}, mb: "10px", cursor: "pointer" }}>Company</Typography>
                                         {companyArray}
                                     </Box>
 
                                 </Grid>
-                                <Grid item xs={6} sx={{ display: "flex", justifyContent: "right",alignItems:'center', }}>
+                                <Grid item xs={6} sx={{ display: "flex", justifyContent: "center",alignItems:'center', }}>
                                     <Box sx={{ display: "flex", justifyContent: "flex-start", flexDirection: "column" }}>
                                         <Typography variant='h1' className='Box1' sx={{ color: MAIN_COLOR, fontWeight: "900", fontSize: {lg:'28px', md:'26px' ,sm:'24px',xs:'20px'}, mb: "10px", cursor: "pointer" }}>Support</Typography>
                                         {supportArray}

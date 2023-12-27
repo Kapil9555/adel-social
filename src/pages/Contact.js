@@ -1,6 +1,5 @@
-import { Box, Button, Checkbox, Container, FormControlLabel, FormGroup, Grid, TextField, Typography } from '@mui/material';
+import { Box, Button,  Container, Grid, TextField, Typography } from '@mui/material';
 import React, { useContext } from 'react';
-import captcha from '../assets/capcha.jpeg'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import contactwall from '../assets/contactwall.jpg';
 import Typewriter from 'typewriter-effect';
@@ -101,13 +100,12 @@ const ContactUs = () => {
 
                         </Grid>
                         <Grid item lg={5} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '10px', xs: '15px' }, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Typography variant='h5' sx={{ fontSize: { lg: '35px', md: '33px', sm: '30px', xs: '28px' }, color: '#01579b', fontWeight: '600' }}>Locate Us</Typography>
-                            <Typography variant='h2' sx={{ fontSize: '18px', fontWeight: '600' }}>Malviya Nagar</Typography>
+                            <Typography  sx={{ fontSize: { lg: '30px', md: '27px', sm: '25px', xs: '24px' }, color: '#01579b', fontWeight: '600' }}>Locate Us</Typography>
                             <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px', textAlign: 'center' }}>P-27, Block P, <br />Shivalik Colony, Malviya Nagar,<br /> New Delhi, Delhi 110017, <br />info@adelsocial.com</Typography>
                             <Typography sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' } }}><PhoneIphoneIcon fontSize='small' />{MOBILE}</Typography>
-                            <Grid container sx={{ mt: { lg: '15px', md: '15px', sm: '3px', xs: '0px' }, height: '200px' }}>
+                            <Grid container sx={{ mt: { lg: '15px', md: '15px', sm: '17px', xs: '17px' } }}>
                                 <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                                    <Typography variant='h4' sx={{ fontSize: { lg: '26px', md: '24px', sm: '24px', xs: '24px' }, color: '#01579b', fontWeight: '600' }}>Working Hours</Typography>
+                                    <Typography  sx={{ fontSize: { lg: '30px', md: '27px', sm: '25px', xs: '24px' }, color: '#01579b', fontWeight: '600' }}>Working Hours</Typography>
                                     <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px', textAlign: 'center' }}>Our office is open 24*7 <br />Open Monday to Saturday<br /> From 08:00 AM to 07:00 PM</Typography>
 
                                 </Grid>
@@ -120,7 +118,7 @@ const ContactUs = () => {
                 </Container>
             </Grid>
             <SendMessage />
-            <Footer />
+            <Footer/>
         </>
 
     )

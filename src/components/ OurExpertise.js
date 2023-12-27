@@ -37,7 +37,7 @@ const OurExpertise = () => {
                     <h1><strong>{item.title}</strong></h1>
                     <Typography sx={{}}>{item.desc}</Typography>
                     <img width="70px" height={"50px"} src={item.icon} alt="pic" />
-                    <div className="layers">
+                     <div className="layers">
                         <div className="layer"></div>
                         <div className="layer"></div>
                         <div className="layer"></div>
@@ -48,21 +48,18 @@ const OurExpertise = () => {
                         <div className="layer"></div>
                         <div className="layer"></div>
                         <div className="layer"></div>
-                    </div>
+                     </div>
                 </Box>
             </Box>
-
         })
     return (
-
-        <Box component={'div'} sx={{ padding: { lg: '20px', xs: '10px' }, width: '100%' }}>
+        <Box component={'div'} sx={{ padding: { lg: '20px', xs: '30px' }, width: '100%'}}>
             <SectionHead title={"OUR TECHNOLOGIES EXPERTISE"} tagline={"Building Your Digital Future with Expertise and Excellence"} />
-
             <Box component='div' className='scrollTechParent' sx={{ p: { xs: '10px 2px', lg: '30px 20px', md: '30px 20px', sm: '30px 10px' }, width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'nowrap', overflow: "hidden", borderRadius: { lg: '100px', xs: '10px', sm: '100px', md: '100px' } }}>
                 <Container disableGutters sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <div className="scrollTech" style={{ width: state.currentScreenSize < 1000 && state.currentScreenSize > 800 ? '90%' : '100%', padding: '0px'}}>
                         <Carousel
-                            additionalTransfrom={0}
+                            additionalTransform={0}
                             arrows={state.currentScreenSize < 600 ? false : true}
                             autoPlay={isMouseDown}
                             autoPlaySpeed={2000}

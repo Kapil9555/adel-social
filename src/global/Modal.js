@@ -33,8 +33,8 @@ const CustomModal = () => {
 
 
                 <Grid container className='modalPopper' sx={{ mt: '30px', position: 'relative', width: { lg: '70%', xs: '95%' }, height: '100%', justifyContent: 'center', borderRadius: '20px', alignItems: 'flex-end', overflowX: { xs: 'hidden' }, overflowY: { lg: 'hidden', md: 'scroll', xs: 'scroll' } }}>
-                    <Grid item lg={5} xs={12} sx={{ height: { lg: '100%', xs: '50%', md: '50%' }, bgcolor: "blue", p: { lg: "30px 20px", xs: '60px 7px' }, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                        <Box sx={{ userSelect: 'none', width: { lg: "200px", xs: "100px", md: '200px' }, height: { lg: '60px', md: '60px', xs: '30px' }, bgcolor: "white", borderRadius: '10px' }}>
+                    <Grid item lg={5} xs={12} sx={{ height: { lg: '100%', xs: '50%', md: '50%' }, bgcolor: "blue", p: { lg: "30px 20px", xs: '60px 7px' }, display: 'flex', flexDirection: 'column',position:"relative", justifyContent: 'space-between' }}>
+                        <Box sx={{ userSelect: 'none', width: { lg: "200px", xs: "100px", md: '200px' }, height: { lg: '60px', md: '60px', xs: '30px' }, bgcolor: "white", borderRadius: '10px',position:{xs:"absolute",md:"static",sm:"static",lg:"static"},top:"10px",left:"10px" }}>
                             <img src={logo} alt='pic' width="100%" height="100%" />
                         </Box>
 
@@ -56,8 +56,8 @@ const CustomModal = () => {
                             </div>
 
                         </Box>
-                        <Box sx={{ borderLeft: "2px solid #FF9900", pl: "11px" }}>
-                            <Typography sx={{ color: "white", lineHeight: { lg: "30px", xs: '20px', md: '30px', sm: '30px' }, fontSize: { xs: '10px', lg: '18px', md: '18px', sm: '18px' } }}>
+                        <Box sx={{ borderLeft: "2px solid #FF9900", pl: "11px",mt:"15px" }}>
+                            <Typography sx={{ color: "white", lineHeight: { lg: "30px", xs: '20px', md: '30px', sm: '30px' }, fontSize: { xs: '13px', lg: '18px', md: '18px', sm: '18px' } }}>
                                 Wait A Minute! These Special Free Services <br />Are Only For You! Look No More;<br />
                                 Fill Up The Form & Be A Lucky One!
                             </Typography>
@@ -96,7 +96,7 @@ const CustomModal = () => {
                 </Grid>
 
             </Container>
-        </Modal >
+        </Modal>
 
     )
 }

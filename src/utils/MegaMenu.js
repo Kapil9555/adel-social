@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import '../pages/Homepage.css'
-import { useNavigate } from 'react-router-dom'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { Box, Button, Grid, Typography } from '@mui/material'
-import { HOVER_COLOR, MAIN_COLOR, SECONDARY_COLOR } from '../constant'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { HOVER_COLOR, MAIN_COLOR } from '../constant'
+import '../pages/Homepage.css'
 // import "@fontsource/lora"; // Defaults to weight 400
 import "@fontsource/lora/700.css"; // Specify weight
 // import "@fontsource/lora/400-italic.css";

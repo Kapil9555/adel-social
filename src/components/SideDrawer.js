@@ -19,7 +19,7 @@ export default function SideDrawer() {
 
 
     const handleNavigate=(ele)=>{
-        if(ele=='ADEL'){
+        if(ele==='ADEL'){
             window.location.href="https://sms.adelsocial.com/pricing"
         }
         else{

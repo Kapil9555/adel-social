@@ -1,12 +1,11 @@
 import { Grid, Typography } from '@mui/material';
-import { MAIN_COLOR } from '../constant';
 import angular from '../assets/angular2.png';
 import flutter from '../assets/flutter2.png';
-import python from '../assets/python.png';
 import node from '../assets/node.png';
-import javaSc from '../assets/jsav.png';
-import ProposalInput from '../global/ProposalInput';
+import python from '../assets/python.png';
 import word from '../assets/word.png';
+import { MAIN_COLOR } from '../constant';
+import ProposalInput from '../global/ProposalInput';
 import '../pages/Homepage.css';
 
 

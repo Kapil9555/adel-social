@@ -34,9 +34,9 @@ const OurExpertise = () => {
         { title: 'Node JS', path: 'nodejs', icon: node, desc: 'Node.js: Lightweight, scalable, and efficient JavaScript runtime for server-side applications.' }].map((item) => {
             return <Box onClick={() => navigate(item.path)} onMouseDown={() => (setIsMouseDown(false))} onMouseOut={() => (setIsMouseDown(true))} key={item.title} className="card-container" sx={{display: "flex", justifyContent: "center" }}>
                 <Box className="card" sx={{ height: { lg: "280px", md: "280px", sm: "280px", xs: "280px" }, width: { lg: "280px", md: "280px", sm: "280px", xs: "280px" } }}>
-                    <h1><strong>{item.title}</strong></h1>
-                    <Typography sx={{}}>{item.desc}</Typography>
-                    <img width="70px" height={"50px"} src={item.icon} alt="pic" />
+                    <h2><strong>{item.title}</strong></h2>
+                    <Typography sx={{fontSize:{lg:"16px",md:"16px",sm:"16px",xs:"15px"}}}>{item.desc}</Typography>
+                    <img width="60px" height={"50px"} src={item.icon} alt="pic" />
                      <div className="layers">
                         <div className="layer"></div>
                         <div className="layer"></div>
@@ -53,9 +53,9 @@ const OurExpertise = () => {
             </Box>
         })
     return (
-        <Box component={'div'} sx={{ padding: { lg: '20px', xs: '30px' }, width: '100%'}}>
+        <Box component={'div'} sx={{ padding: { lg: '20px', xs: '10px' }, width: '100%'}}>
             <SectionHead title={"OUR TECHNOLOGIES EXPERTISE"} tagline={"Building Your Digital Future with Expertise and Excellence"} />
-            <Box component='div' className='scrollTechParent' sx={{ p: { xs: '10px 2px', lg: '30px 20px', md: '30px 20px', sm: '30px 10px' }, width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'nowrap', overflow: "hidden", borderRadius: { lg: '100px', xs: '10px', sm: '100px', md: '100px' } }}>
+            <Box component='div' className='scrollTechParent' sx={{ p: { xs: '10px 2px', lg: '30px 20px', md: '30px 20px', sm: '30px 10px' }, width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'nowrap', overflow: "hidden", borderRadius: { lg: '100px', xs: '10px', sm: '100px', md: '100px' }}}>
                 <Container disableGutters sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <div className="scrollTech" style={{ width: state.currentScreenSize < 1000 && state.currentScreenSize > 800 ? '90%' : '100%', padding: '0px'}}>
                         <Carousel

@@ -59,7 +59,7 @@ const WebHosting = () => {
             <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>
                 <Divider sx={{ border: '1px solid lightgray', width: '80%' }} />
             </Grid>
-            {state.currentScreenSize > 775 && <>
+            {state.currentScreenSize> 775 && <>
                 <Typography paragraph textAlign={'center'} color={SECONDARY_COLOR} fontWeight={900} m={'20px'} sx={{ bgcolor: MAIN_COLOR, borderRadius: '20px' }}>Top Features</Typography>
                 <Grid container flexDirection={'column'} pl="10px">
                     {plan.features.map((item, index) => {

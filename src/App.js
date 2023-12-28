@@ -43,7 +43,7 @@ import LandingLayout from "./pages/landingpage/LandingLayout";
 import LaravelPage from "./pages/web/Laravel";
 import Wordpress from "./pages/web/Wordpress";
 import useBottomBar from "./utils/useBottomBar";
-import Practise from './Practise';
+
 
 function App() {
   const { state } = useBottomBar()
@@ -121,7 +121,6 @@ function App() {
           <Route exact path="welcome" element={<LandingLayout />} />
           {/* services of sidebar */}
           <Route exact path="bulkmailer" element={<BulkMailer />} />
-          <Route exact path='extra' element={<Practise/>}/>
         </Routes>
       </Router>
     </>

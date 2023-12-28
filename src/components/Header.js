@@ -1,19 +1,18 @@
-import { AppBar, Toolbar, CssBaseline, Box, Typography, IconButton, Button, Grid } from '@mui/material';
+import { AppBar, Box, Button, CssBaseline, Grid, Toolbar } from '@mui/material';
 // import logo from '../assets/logo.png'
-import ScrollToColor from "../global/ScrollToColor";
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import "@fontsource/lora"; // Defaults to weight 400
+import "@fontsource/lora/400-italic.css";
+import "@fontsource/lora/400.css"; // Specify weight
 import MenuIcon from '@mui/icons-material/Menu';
 import { useContext } from 'react';
-import { AdelContext } from '../store/Context';
-import { MAIN_COLOR, SECONDARY_COLOR } from '../constant';
-import MegaMenu from "../utils/MegaMenu";
-import logo from '../assets/adellogo.png'
-import { items, solutionsSection } from '../global/NavbarData'
-import '../pages/Homepage.css'
 import { useNavigate } from 'react-router-dom';
-import "@fontsource/lora"; // Defaults to weight 400
-import "@fontsource/lora/400.css"; // Specify weight
-import "@fontsource/lora/400-italic.css";
+import logo from '../assets/adellogo.png';
+import { MAIN_COLOR } from '../constant';
+import { items } from '../global/NavbarData';
+import ScrollToColor from "../global/ScrollToColor";
+import '../pages/Homepage.css';
+import { AdelContext } from '../store/Context';
+import MegaMenu from "../utils/MegaMenu";
 
 
 

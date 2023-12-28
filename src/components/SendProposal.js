@@ -1,14 +1,12 @@
-import { Grid, Typography, Button, Container } from '@mui/material'
+import { Container, Grid, Typography } from '@mui/material'
 import React from 'react'
-import { AVATAR_IMAGE, MAIN_COLOR, SECONDARY_COLOR,MOBILE } from '../constant'
-import ProposalInput from '../global/ProposalInput'
 import first from '../assets/first.svg'
+import fifth from '../assets/five.svg'
+import fourth from '../assets/fourth.svg'
 import second from '../assets/second.svg'
 import third from '../assets/third.svg'
-import fourth from '../assets/fourth.svg'
-import fifth from '../assets/five.svg'
+import { MAIN_COLOR, SECONDARY_COLOR } from '../constant'
 import '../pages/Homepage.css'
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 const SendProposal = () => {
     const reviews = [{ title: "Thousands of successfully completed project", icon: first,animate:"fade-up"  }, { title: "Data-driven & well thought-proven strategies", icon: second,animate:"fade-up" },

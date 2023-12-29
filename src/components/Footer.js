@@ -24,7 +24,7 @@ const Footer = () => {
         return <Typography onClick={() => { navigate(`${item.path}`); window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }} key={index} sx={{ transition: "all 0.30s ease", color: 'white', fontSize: { lg: '17px', md: '17px', sm: '14px', xs: '14px' }, fontWeight: "700", mt: "8px", borderBottom: '3px solid transparent', '&:hover': { opacity: 0.6, borderBottom: `3px solid ${HOVER_COLOR}`, cursor: 'pointer' } }}>{item.title}</Typography>
     })
 
-    const socialIcons = [{ icon: <InstagramIcon />, name: "insta" ,link:'https://www.instagram.com/adelsociall/' }, { icon: <FacebookIcon />, name: "face", link:'https://www.facebook.com/AdelSocial/' }, { icon: <TwitterIcon />, name: "twit", link:'https://twitter.com/i/flow/login?redirect_after_login=%2Fadelsocial' }, { icon: <LinkedInIcon />, name: "link" , link:'https://www.linkedin.com/in/tanishq-tiwari-077b96152/?originalSubdomain=in'}];
+    const socialIcons = [{ icon: <InstagramIcon />, name: "insta" ,link:'https://www.instagram.com/adelsociall/' }, { icon: <FacebookIcon />, name: "face", link:'https://www.facebook.com/AdelSocial/' }, { icon: <TwitterIcon />, name: "twit", link:'https://twitter.com/i/flow/login?redirect_after_login=%2Fadelsocial' }, { icon: <LinkedInIcon />, name: "link" , link:'https://www.linkedin.com/company/adelsocial/'}];
 
 
     return (

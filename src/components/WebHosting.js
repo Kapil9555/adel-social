@@ -30,6 +30,7 @@ const WebHosting = () => {
         }
     }
     const handleHostingPlan = (planName) => {
+
         switch (planName) {
             case 'Single Domain Hosting':
                 window.open('https://domain.adelsocial.com/hosting.php')
@@ -74,7 +75,6 @@ const WebHosting = () => {
                     <Typography mt="18px" sx={{ color: 'black' }} textAlign={'center'} fontSize={'12px'} fontWeight={900} whiteSpace={'wrap'}>{plan.title}</Typography>
                 </Grid>
             </>}
-
         </Grid>
     })
 

@@ -43,6 +43,7 @@ import LandingLayout from "./pages/landingpage/LandingLayout";
 import LaravelPage from "./pages/web/Laravel";
 import Wordpress from "./pages/web/Wordpress";
 import useBottomBar from "./utils/useBottomBar";
+import NewCrousel from './components/NewCrousel';
 
 
 function App() {
@@ -121,6 +122,8 @@ function App() {
           <Route exact path="welcome" element={<LandingLayout />} />
           {/* services of sidebar */}
           <Route exact path="bulkmailer" element={<BulkMailer />} />
+          <Route exact path="cro" element={<NewCrousel />} />
+
         </Routes>
       </Router>
     </>

@@ -74,9 +74,9 @@ const Test = () => {
 
                     </Box>
 
-                </Box >
-            </Box >
-        </Box >
+                </Box>
+            </Box>
+        </Box>
     )
 }
 

@@ -16,6 +16,7 @@ import BottomNavBar from '../global/BottomNavBar'
 import useBottomBar from '../utils/useBottomBar'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import NewCrousel from '../components/NewCrousel'
 
 const Homepage = () => {
     const { dispatch } = useContext(AdelContext)
@@ -33,16 +34,15 @@ const Homepage = () => {
     return (
            <>
             {state.currentScreenSize < 918 && <BottomNavBar />}
+            <Header/>
             <CustomModal />
             <Grid container className='mainboxHomepage' sx={{ p: '100px', pb: { lg: '30px', xs: '10px', sm: '30px', md: '30px' }, backgroundImage: `url(${bg})`, backgroundPosition: 'center', backgroundSize: 'cover', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-                <Grid item>
-                    <Header/>
-                </Grid>
                 <Grid item sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', height: '100%' }}>
                     <BannerText />
                 </Grid>
             </Grid>
             <WhyUs />
+            {/* <NewCrousel/> */}
             <SendProposal />
             <OurExpertise />
             <WebHosting />

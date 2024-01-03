@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ef76f61.css",
-    "main.js": "/static/js/main.19250c4a.js",
+    "main.css": "/static/css/main.c18a630a.css",
+    "main.js": "/static/js/main.0590f416.js",
     "static/media/hiring-modal-two.png": "/static/media/hiring-modal-two.18936b61fb51522f8c98.png",
     "static/media/hireDeveloper.jpg": "/static/media/hireDeveloper.75688cd842694a4714b7.jpg",
     "static/media/reactnative.jpg": "/static/media/reactnative.f3e964a434ef76a83392.jpg",
@@ -16,14 +16,19 @@
     "static/media/gcp2.png": "/static/media/gcp2.4f857dd30dff5037c296.png",
     "static/media/ship.jpg": "/static/media/ship.fbfc77e98a8acfba77be.jpg",
     "static/media/angular.png": "/static/media/angular.41ef8ebda2c465c4ec26.png",
+    "static/media/googleads.jpg": "/static/media/googleads.52ce45144870c8141c64.jpg",
+    "static/media/vps.jpg": "/static/media/vps.e4e0c9b2de54c4d893a4.jpg",
     "static/media/web-design.jpg": "/static/media/web-design.9f568bb86220088cfc6d.jpg",
+    "static/media/Bulksms.png": "/static/media/Bulksms.f68533fa5bd8dd0bcfe5.png",
     "static/media/webapp.png": "/static/media/webapp.98a13c21bcfc3f326bb5.png",
     "static/media/webdev.png": "/static/media/webdev.b8271119ebe61bb31bcd.png",
     "static/media/pmanager.jpg": "/static/media/pmanager.dd911266f0b8f217f8c9.jpg",
     "static/media/digitalmarketingg.jpg": "/static/media/digitalmarketingg.fe6b651c064d7d4d4c53.jpg",
     "static/media/avatar.jpg": "/static/media/avatar.bc1300f7e1a8f1ab7c44.jpg",
+    "static/media/domain.jpg": "/static/media/domain.d4acc19d6a0f79616a6b.jpg",
     "static/media/wordpress-development-services-1.jpg": "/static/media/wordpress-development-services-1.48440b5dd9e93b7eb9fa.jpg",
     "static/media/background-8.png": "/static/media/background-8.da32d31727114e084042.png",
+    "static/media/landingpage.webp": "/static/media/landingpage.3aa9f56944ef0ced244e.webp",
     "static/media/adelteam.jpg": "/static/media/adelteam.2dcc13f5eab4f7b26f75.jpg",
     "static/media/bulk_mail.png": "/static/media/bulk_mail.4c795f6ebb123187984d.png",
     "static/media/aws2.png": "/static/media/aws2.f67b92b1ff49d8174bbe.png",
@@ -33,10 +38,13 @@
     "static/media/landing.png": "/static/media/landing.534227eceeb65a744f7d.png",
     "static/media/corestrenth.jpg": "/static/media/corestrenth.0461f03c4b5c17d119c3.jpg",
     "static/media/hiring-modal-three.jpg": "/static/media/hiring-modal-three.4ab79e6c60bf724e7cda.jpg",
+    "static/media/whatsbutton.jpg": "/static/media/whatsbutton.bdc2b4fa13eba1cf52eb.jpg",
     "static/media/aboutbanner.jpg": "/static/media/aboutbanner.ebe3438fef72028094f5.jpg",
     "static/media/dm.png": "/static/media/dm.8e8a0093755e305e4af7.png",
+    "static/media/whatsapp.jpg": "/static/media/whatsapp.c385ecebf8400073b03e.jpg",
     "static/media/jobopening.jpeg": "/static/media/jobopening.615be369873a6bce52ce.jpeg",
     "static/media/landing4.jpg": "/static/media/landing4.0681eeac4e0f4eff9c57.jpg",
+    "static/media/fbads.jpeg": "/static/media/fbads.d4a0d2200550548a55d6.jpeg",
     "static/media/landing3.jpg": "/static/media/landing3.fbb2472e66bcc0ae786a.jpg",
     "static/media/sales.jpg": "/static/media/sales.33ccc8fd9d62178f743c.jpg",
     "static/media/hover3.png": "/static/media/hover3.8a73c2d85e3c094907b8.png",
@@ -72,6 +80,7 @@
     "static/media/lora-cyrillic-ext-400-italic.woff": "/static/media/lora-cyrillic-ext-400-italic.cd92ee00085cf144cc84.woff",
     "static/media/cyber1.jpeg": "/static/media/cyber1.914b70b6393e59c427c8.jpeg",
     "static/media/adellogo.png": "/static/media/adellogo.774677c77c9615bd7979.png",
+    "static/media/mobilegame.webp": "/static/media/mobilegame.401ee0a3596ba5970f1d.webp",
     "static/media/lora-cyrillic-ext-700-normal.woff": "/static/media/lora-cyrillic-ext-700-normal.84a445266f15e8863340.woff",
     "static/media/lora-cyrillic-ext-400-normal.woff": "/static/media/lora-cyrillic-ext-400-normal.bb32d1bd026162efff00.woff",
     "static/media/angular2.png": "/static/media/angular2.e26290e2f462535adef4.png",
@@ -116,11 +125,11 @@
     "static/media/team.svg": "/static/media/team.41b7cefc28f767a14171ccd6cc1816ee.svg",
     "static/media/seo.svg": "/static/media/seo.961d4a085d06886e37ef3c91cdaf8edc.svg",
     "index.html": "/index.html",
-    "main.1ef76f61.css.map": "/static/css/main.1ef76f61.css.map",
-    "main.19250c4a.js.map": "/static/js/main.19250c4a.js.map"
+    "main.c18a630a.css.map": "/static/css/main.c18a630a.css.map",
+    "main.0590f416.js.map": "/static/js/main.0590f416.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ef76f61.css",
-    "static/js/main.19250c4a.js"
+    "static/css/main.c18a630a.css",
+    "static/js/main.0590f416.js"
   ]
 }
